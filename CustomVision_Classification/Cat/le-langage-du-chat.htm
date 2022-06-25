@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html class="no-js doc-rubric-animaux" lang="fr">
+<head prefix="og:http://ogp.me/ns# fb:http://ogp.me/ns/fb# article:http://ogp.me/ns/article#">
+    <script>
+  window.gdprAppliesGlobally=true;
+  (function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
+  else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
+    var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
+    if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e){
+    var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target="+document.location.hostname;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("1c7a6a97-5c7c-4b1d-8ea2-9ffa2349a26b")})();
+</script>
+
+    <script type="text/javascript">
+        !function(o,r){var d=o.Didomi||{},t=!1,a=!1,l=!1,s=!1,c="",u="multiple didomi-buttons didomi-popup-notice-buttons",n="buttons",p="style",m="form",i=o.console||{log:function(e){}},f=function(){},v={wall_active:!0};function g(){f=!1,r.getElementById("didomi-host").remove();var e=r.getElementById("old-didomi-host");e.setAttribute("id","didomi-host"),e.style.display="block",d.notice.show("informations")}function y(){return"<div class='didomi-popup-notice-logo-container'><img class='didomi-popup-notice-logo' alt='Logo' src='"+d.getConfig().app.logoUrl+"'></div>"}function b(e){e=Object.assign({id:"X",defaultClasses:"didomi-components-button didomi-button standard-button",class:"",content:"OK",disabled:!1},e);return e.class=e.defaultClasses+" "+e.class,e.disabled=e.disabled?"disabled":"","<button id='"+e.id+"' class='"+e.class.trim()+"' "+e.disabled+"><span>"+e.content+"</span></button>"}function h(){r.getElementById("old-didomi-host")||(t=r.getElementById("didomi-host"),(i=r.createElement("div")).setAttribute("id","didomi-host"),i.setAttribute("unifywall",!0),i.innerHTML=t.innerHTML,(e=i.querySelector(".didomi-popup-view"))&&(e.id="unify_wall_content",t.setAttribute("id","old-didomi-host"),t.style.display="none",r.body.insertBefore(i,r.getElementById("old-didomi-host")),r.body.classList.add("didomi-popup-open"),setTimeout(function(){r.body.classList.add("didomi-popup-open")},200),f=!1));var e=r.getElementById("unify_wall_content");if(e){var t={id:"unify-accept-finally",class:"didomi-button-highlight",content:v.btn_accept_finally},i={id:"unify-goto-subscribe",class:"didomi-button-highlight",content:v.btn_abo_text};return e.innerHTML=y()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text'>"+v.paywall_text+"<div id='"+n+"' class='"+u+"'>"+b(t)+b(i)+"</div></div></div>",e.querySelector("#unify-accept-finally").addEventListener("click",function(){g(),d.setUserAgreeToAll(),r.body.classList.remove("didomi-popup-open")}),e.querySelector("#unify-goto-subscribe").addEventListener("click",function(){_()}),f=!1,1}}function _(){var o=r.getElementById("unify_wall_content");if(!o)return!1;var e=v.legal_text_full.split("</p>",1)[0]+"</p>",t={id:"unify-pay",class:"didomi-button-highlight",content:"Confirmer",disabled:0==c.trim().length};o.innerHTML=y()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text'><div class='didomi-popup-title'>"+v.prepayment_title+"</div><"+m+" action='/?payment' method='post' id='prepayment-form'><div class='didomi-popup-form-row'><div class='didomi-field-container didomi-field-container-2'><input type='email' name='email' value='"+c+"' placeholder='Adresse e-mail*' aria-label='Adresse e-mail' required /></div><div><small>* champ obligatoire</small></div></div><div class='didomi-popup-form-row'><p><strong>"+v.legal_text_title+"</strong></p>"+e+"<p "+p+"='margin-top:-5px; text-align:center'><svg id='unify-see-legal-screen' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 452' "+p+"='width:20px;margin:0 auto;cursor:pointer'><path fill='"+d.getConfig().theme.color+"' d='m226 355c-8 0-16-3-22-9l-194-194c-12-12-12-32 0-45 12-12 32-12 45 0l172 172 172-172c12-12 32-12 45 0 12 12 12 32 0 45l-194 194c-6 6-14 9-22 9z'/></svg></p></div><div class='"+u+"'>"+b({id:"unify-goback",content:"Retour"})+b(t)+"</div></"+m+"></div></div>",o.querySelector("#unify-goback").addEventListener("click",function(e){e.preventDefault(),o.querySelector("input[name=email]").remove(),h()}),o.querySelector("#unify-pay").addEventListener("click",function(e){i(),e.preventDefault(),o.querySelector("input[name=email]").remove(),w()}),o.querySelector("#unify-see-legal-screen").addEventListener("click",function(e){i(),e.preventDefault(),o.querySelector("input[name=email]").remove(),function(){var e=r.getElementById("unify_wall_content");if(!e)return;e.innerHTML=y()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text'><p><strong>"+v.legal_text_title+"</strong></p>"+v.legal_text_full+"<p "+p+"='margin-top:-5px; text-align:center; transform:rotate(180deg)'><svg class='unify-goback' id='unify-see-legal-screen-back' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 452' "+p+"='width:20px;margin:0 auto;cursor:pointer'><path fill='"+d.getConfig().theme.color+"' d='m226 355c-8 0-16-3-22-9l-194-194c-12-12-12-32 0-45 12-12 32-12 45 0l172 172 172-172c12-12 32-12 45 0 12 12 12 32 0 45l-194 194c-6 6-14 9-22 9z'/></svg></p></div></div>",e.querySelectorAll(".unify-goback").forEach(function(e){e.addEventListener("click",_)}),f=!1}()});var i=function(e){var t=o.querySelector("input[name=email]"),i=t.checkValidity(),n=o.querySelector("#unify-pay");i&&(c=t.value,n.removeAttribute("disabled")),i||n.hasAttribute("disabled")||n.setAttribute("disabled","disabled")};return o.querySelector("input[name=email]").addEventListener("keyup",i),o.querySelector("input[name=email]").addEventListener("onblur",i),l||S(function(){}),!(f=!1)}function x(e){e=e||"Merci de réitérer ultérieurement",o.clearTimeout(a);var t=r.getElementById("unify_wall_content");if(!t)return!1;t.innerHTML=y()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text' "+p+"='text-align:center'><div class='didomi-popup-title'>Désolé...</div><p>Une erreur s'est produite : <em>"+e+"</em></p></div></div>",f=!1}function w(){var t=r.getElementById("unify_wall_content");if(!t)return!1;if((i=r.getElementById("unify_wall_content"))&&(i.scrollHeight,i.scrollWidth,i.innerHTML=y()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text' "+p+"='text-align:center'><"+p+'>.unifywall-loader-icon {display: block;width: 80px;height: 80px;margin-left: auto;margin-right: auto;}.unifywall-loader-icon:after {content: " ";display: block;width: 64px;height: 64px;margin: 8px;border-radius: 50%;border: 6px solid '+d.getConfig().theme.color+";border-color: "+d.getConfig().theme.color+" transparent "+d.getConfig().theme.color+" transparent;animation: unifywall-loader-icon 1.2s linear infinite;}@keyframes unifywall-loader-icon {0% { transform: rotate(0deg);}100% { transform: rotate(360deg);}}</"+p+"><div class='unifywall-loader-icon'></div><span class='didomi-popup-notice'>Chargement en cours...</span></div></div>",o.clearTimeout(a),a=o.setTimeout(function(){return x("temps d'attente dépassé")},2e4),f=!1),l){if(!s)return f=!1,void function t(i,e){if(!e){var n=k("create_intent");return void L(n,function(e){t(i,e)})}if("object"!=typeof e||!("status"in e))return void x();if("success"!==e.status)return void x();s=e.intent.client_secret;i();return}(w);o.clearTimeout(a);var e={id:"unify-pay",class:"didomi-button-highlight",content:v.btn_pay_text,disabled:!0};t.innerHTML=y()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text'><div class='didomi-popup-title'>S'abonner à <span>"+d.getConfig().app.name+"</span></div><div class='didomi-popup-arguments'>"+v.arguments_text+"</div><"+m+" action='/?payment' method='post' id='payment-form'><div id='card-errors' role='alert'></div><div class='didomi-popup-form-row'><label for='card-number'>&#x1F512; Informations de la carte*</label><div class='didomi-field-container'><div id='card-number'></div><div id='card-expiry'></div><div id='card-cvc'></div></div><div><small>* champs obligatoires</small></div></div><div class='didomi-popup-form-row'>"+v.payment_legal_text+"</div><div class='"+u+"'>"+b({id:"unify-goback",content:"Retour"})+b(e)+"</div></"+m+"></div></div>",t.querySelector("#unify-goback").addEventListener("click",_);var i=l.elements(),e={base:{color:"#3F3735",fontWeight:500,fontSize:"15px",fontSmoothing:"antialiased","::placeholder":{color:"#CFD7DF"},":-webkit-autofill":{color:"#e39f48"}},invalid:{color:"#E25950","::placeholder":{color:"#FFCCA5"}}},n=i.create("cardNumber",{style:e,showIcon:!0,placeholder:"Numéro de carte"});n.mount("#card-number"),i.create("cardExpiry",{style:e}).mount("#card-expiry");e=i.create("cardCvc",{style:e});return e.mount("#card-cvc"),e.on("change",function(e){t.querySelector("#unify-pay").disabled=!e.complete,t.querySelector("#card-errors").textContent=e.error?e.error.message:""}),t.querySelector("#payment-form").addEventListener("submit",function(e){e.preventDefault(),t.querySelector("#unify-pay").disabled=!0,t.querySelector("#unify-pay span").innerHTML="Vérifications en cours",l.confirmCardPayment(s,{payment_method:{card:n,billing_details:{email:c}}}).then(C)}),!(f=!1)}S(w)}function C(e){var t,i=null;"object"!=typeof e?i="Une erreur innattendue est survenue":e.error?i=e.error.message:"paymentIntent"in e&&"status"in e.paymentIntent&&"succeeded"==e.paymentIntent.status||(i="Ce paiement a été refusé, veuillez vérifier vos informations bancaires"),i?(o.document.querySelector("#unify-pay span").innerHTML=v.btn_pay_text,t=i,(i=r.getElementById("card-errors"))&&(i.textContent=t)):L(k("check_and_grant_access",{stripe_client_secret:e.paymentIntent.id}),function(e){return(!(e&&"object"==typeof e&&"status"in e&&"success"===e.status)?x:function(){var e=r.getElementById("unify_wall_content");if(!e)return;e.innerHTML=y()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text' "+p+"='text-align:center'><div "+p+"='width:80px;margin: 0 auto 20px'><svg viewBox='0 0 44 44' xmlns='http://www.w3.org/2000/svg'><path d='M42.833 7.792L19.062 31.584l-8.833-8.833 2.937-2.938 5.896 5.896L39.895 4.876l2.937 2.917zm-4.604 10.5c.27 1.188.437 2.438.437 3.708 0 9.209-7.458 16.667-16.667 16.667S5.332 31.21 5.332 22 12.791 5.333 22 5.333c3.292 0 6.334.959 8.917 2.605l3-3a20.625 20.625 0 00-11.917-3.771C10.499 1.167 1.166 10.5 1.166 22s9.333 20.833 20.833 20.833S42.832 33.499 42.832 22c0-2.48-.458-4.854-1.25-7.063l-3.354 3.354z' fill='"+d.getConfig().theme.color+"' fill-rule='nonzero' stroke='#fff' stroke-width='1.5'/></svg></div><div class='didomi-popup-title'>Votre paiement a bien été enregistré.</div><p><span>Vous allez recevoir un e-mail de confirmation dans quelques instants.</span></p><div id='"+n.split("").join("")+"' class='"+u+"'>"+b({id:"btn-close-confirm-payment",class:"didomi-button-highlight",content:"Je commence à naviguer"})+"</div></div></div>",e.querySelector("#btn-close-confirm-payment").addEventListener("click",function(){g(),d.setUserDisagreeToAll(),r.body.classList.remove("didomi-popup-open")}),f=!1})()})}function e(){var e=r.getElementById("didomi-host");o.MutationObserver&&!t&&(t=new MutationObserver(function(e){e=e.filter(function(e){return 0<e.addedNodes.length&&e.target.className.includes("notranslate")}),e=e.filter(function(e){return e.target.className.includes("notranslate")});0<e.length&&f&&f()}),e.setAttribute("unify_wall",!0),t.observe(e,{childList:!0,subtree:!0}))}function q(){var e,t;for(e in v.required_purposes_ids){var i=v.required_purposes_ids[e];if(!1===d.getUserConsentStatusForPurpose(i))return!1}for(t in v.required_vendors_ids){var n=v.required_vendors_ids[t];if(!1===d.getUserConsentStatusForVendor(n))return!1}return!0}function S(e){var t=r.createElement("script");t.type="text/javascript",t.src="https://js.stripe.com/v3/",t.onload=function(){l=Stripe(v.stripe_publishable_key,{locale:"fr"}),e()},o.document.head.appendChild(t)}function L(e,t){var i=new XMLHttpRequest;i.onreadystatechange=function(){var e;i.readyState==XMLHttpRequest.DONE&&(e=JSON.parse(i.responseText),t(e))},i.ontimeout=function(){return x("Délai d'attente dépassé")},i.onerror=function(e){t(!0)},i.open("POST",e),i.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),i.withCredentials=!0,i.send()}function k(e,t){var i=v.stripe_proxy_url;if(i+=i.includes("?")?"&":"?",i+="action="+e,t)for(var n in t)i+="&"+n+"="+encodeURIComponent(t[n]);return i}o.didomiConfig=o.didomiConfig||{},o.didomiConfig.notice=o.didomiConfig.notice||{},"enable"in o.didomiConfig.notice&&!1===o.didomiConfig.notice.enable||(!0!=!!r.cookie.split("; ").find(function(e){return e.startsWith("unifywall_paid=")})?(o.didomiConfig.notice.enable=!0,o.didomiOnReady=o.didomiOnReady||[],o.didomiOnReady.push(function(){d=o.Didomi||{},0!=function(){0 in d.getConfig();0 in d.getConfig().custom;(v=Object.assign({},v,d.getConfig().custom.unify_wall)).debug&&v.debug;if(0<["wall_active","paywall_text","btn_abo_text","btn_accept_finally","required_purposes_ids","required_vendors_ids","stripe_publishable_key","stripe_proxy_url","prepayment_title","legal_text_title","legal_text_full","arguments_text","payment_legal_text","btn_pay_text"].reduce(function(e,t){return t in v?e:(i.error("-> Unify Wall: Missing mandatory variable "+t),e+1)},0))return!1;return!0}()&&v.wall_active&&(0==d.notice.isVisible()&&0==q()&&0==d.shouldConsentBeCollected()&&(e(),f=function(){h()},d.notice.show("informations")),d.on("notice.clickdisagree",function(){f=function(){h()},h()}),d.on("preferences.clickdisagreetoall",function(){e(),f=function(){h()},d.preferences.hide(),d.notice.show("informations")}),d.on("preferences.clicksavechoices",function(){0==q()&&(e(),f=function(){h()},d.preferences.hide(),d.notice.show("informations"))}),d.on("notice.shown",function(){}))})):o.didomiConfig.notice.enable=!1)}(window,document);
+
+    </script>
+
+    <title>Décrypter le langage de son chat - Mode de communication du chat - Doctissimo</title>
+
+    <link rel="preconnect" href="https://cdn.permutive.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="preconnect" href="https://stats.g.doubleclick.net" />
+    <link rel="dns-prefetch" href="https://connect.facebook.net" />
+
+            <link rel="preconnect" href="https://cdn.prod.docfr.doc-media.fr" />
+        <link rel="preconnect" href="https://cdn.prod.docfr.doc-media.fr" crossorigin />
+            <link rel="preconnect" href="https://cdn1.prod.docfr.doc-media.fr" />
+        <link rel="preconnect" href="https://cdn1.prod.docfr.doc-media.fr" crossorigin />
+            <link rel="preconnect" href="https://cdn2.prod.docfr.doc-media.fr" />
+        <link rel="preconnect" href="https://cdn2.prod.docfr.doc-media.fr" crossorigin />
+            <link rel="preconnect" href="https://cdn3.prod.docfr.doc-media.fr" />
+        <link rel="preconnect" href="https://cdn3.prod.docfr.doc-media.fr" crossorigin />
+    
+            <link rel="preconnect" href="https://resize.prod.docfr.doc-media.fr" />
+            <link rel="preconnect" href="https://resize1.prod.docfr.doc-media.fr" />
+            <link rel="preconnect" href="https://resize2.prod.docfr.doc-media.fr" />
+            <link rel="preconnect" href="https://resize3.prod.docfr.doc-media.fr" />
+    
+            
+<meta charset="utf-8"/>
+<meta name="viewport"                       content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="description"                    content="Le langage du chat se compose de vocalises, de ronronnements ou encore d&#039;attitudes qu&#039;il faut savoir décrypter." />
+<meta name="keywords"                       content="" />
+<meta name="author"                         content="Doctissimo"/>
+
+<meta property="og:title"                   content="Décrypter le langage de son chat" />
+<meta property="og:description"             content="Le langage du chat se compose de vocalises, de ronronnements ou encore d&#039;attitudes qu&#039;il faut savoir décrypter." />
+<meta property="og:type"                    content="article" />
+<meta property="og:url"                     content="https://www.doctissimo.fr/animaux/chat/comportement-chat/le-langage-du-chat" />
+<meta property="og:site_name"               content="Doctissimo" />
+<meta property="og:image"                   content="https://resize2.prod.docfr.doc-media.fr/rcrop/1200,675,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/le-langage-du-chat/712285-4-fre-FR/le-langage-du-chat.jpg" />
+<meta property="og:image:width"             content="1200"/>
+<meta property="og:image:height"            content="675"/>
+<meta property="og:locale"                  content="fr_FR"/>
+
+<meta property="fb:app_id"                  content="290600267704798" />
+<meta name="facebook-domain-verification"   content="no6odwazkf1aogs2vac6pjsz817ikb" />
+
+<meta name="twitter:title"                  content="Décrypter le langage de son chat" />
+<meta name="twitter:description"            content="Le langage du chat se compose de vocalises, de ronronnements ou encore d&#039;attitudes qu&#039;il faut savoir décrypter." />
+<meta name="twitter:card"                   content="summary" />
+<meta name="twitter:site"                   content="@doctissimo" />
+<meta name="twitter:image"                  content="https://resize2.prod.docfr.doc-media.fr/rcrop/1200,675,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/le-langage-du-chat/712285-4-fre-FR/le-langage-du-chat.jpg" />
+<meta name="twitter:url"                    content="https://www.doctissimo.fr/animaux/chat/comportement-chat/le-langage-du-chat" />
+<meta name="twitter:domain"                 content="doctissimo.fr" />
+
+    <meta name="apple-itunes-app" content="app-id=850438927, affiliate-data=at=10lxMt">    <meta name="apple-itunes-app" content="app-id=550460079, affiliate-data=at=10lxMt">    <meta name="apple-itunes-app" content="app-id=324685957, affiliate-data=at=10lxMt">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5053ff"/>
+
+<meta name="verify-v1"                      content="J3d60lX02f3NLFkGPztWLXcM2PFErfCVdnd+4+7jw/A=" />
+<meta name="robots"                         content="index, follow" />
+<meta name="robots"                         content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="application-name"               content="Doctissimo" />
+
+<meta name="theme-color"                    content="#ffffff"/>
+<meta name="msapplication-TileColor"        content="#ffffff"/>
+<meta name="msapplication-config"           content="/browserconfig.xml"/>
+<meta name="msapplication-tooltip"          content="Santé et bien être avec Doctissimo" />
+<meta name="msapplication-window"           content="width=1024;height=768" />
+<meta name="msapplication-navbutton-color"  content="#5053ff" />
+
+<meta name="p:domain_verify"                content="92002e2d669f4518a5dd6492da1ff93d" />
+
+<meta name='dailymotion-domain-verification' content='dmywv9gdgl5icl5cz' />
+
+    <meta property="article:section" content="Comportement du chat" />
+    <meta property="article:tag" content="" />
+    <meta property="article:published_time" content="2017-08-24T17:06:04.000Z" />
+    <meta property="article:modified_time" content="2017-08-24T17:06:04.000Z" />
+                    <meta property="article:author" content="La rédaction de Doctissimo" />
+    
+            <link rel="canonical" href="https://www.doctissimo.fr/animaux/chat/comportement-chat/le-langage-du-chat" />
+
+    
+                
+
+
+
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+                                    {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Accueil",
+                "item": "https://www.doctissimo.fr"
+            }
+                                ,             {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Animaux",
+                "item": "https://www.doctissimo.fr/animaux"
+            }
+                                ,             {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Chat",
+                "item": "https://www.doctissimo.fr/animaux/chat"
+            }
+                                ,             {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Psychologie\u0020du\u0020chat",
+                "item": "https://www.doctissimo.fr/animaux/chat/psychologie-chat"
+            }
+                                ,             {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Comportement\u0020du\u0020chat",
+                "item": "https://www.doctissimo.fr/animaux/chat/comportement-chat"
+            }
+                ]
+}
+</script>
+    
+    
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "D\u00E9crypter\u0020le\u0020langage\u0020de\u0020son\u0020chat",
+        "alternateName": "Le\u0020langage\u0020du\u0020chat",
+        "datePublished": "2015-08-19T11:01:00+02:00",
+        "dateModified": "2017-08-24T19:06:04+02:00",
+        "articlebody": "Certains\u0020chats\u0020sont\u0020plus\u0020bavards\u0020que\u0020d\u0027autres,\u0020mais\u0020tous\u0020s\u0027expriment,\u0020que\u0020ce\u0020soit\u0020par\u0020des\u0020vocalises,\u0020des\u0020ronronnements\u0020ou\u0020encore\u0020par\u0020leurs\u0020attitudes\u0020et\u0020leurs\u0020positions.\u0020Le\u0020chat\u0020communique\u0020avec\u0020son\u0020ma\u00EEtre,\u0020\u00E0\u0020lui\u0020de\u0020savoir\u0020d\u00E9crypter\u0020le\u0020langage\u0020de\u0020son\u0020animal. Si\u0020certaines\u0020races,\u0020comme\u0020les\u0020siamois,\u0020sont\u0020r\u0026eacute\u003Bput\u0026eacute\u003Bes\u0020pour\u0020\u0026ecirc\u003Btre\u0020bavardes,\u0020d\u0027autres\u0020chats\u0020sont\u0020plus\u0020discrets.\u0020Mais\u0020tous\u0020savent\u0020interagir\u0020et\u0020communiquer\u0020avec\u0020l\u0027\u0026ecirc\u003Btre\u0020humain,\u0020\u0026agrave\u003B\u0020l\u0027attention\u0020duquel\u0020ils\u0020ont\u0020d\u0026eacute\u003Bvelopp\u0026eacute\u003B\u0020les\u0020miaulements.\u0020Reste\u0020que\u0020le\u0020d\u0026eacute\u003Bcryptage\u0020du\u0020langage\u0020f\u0026eacute\u003Blin\u0020demandera\u0020au\u0020ma\u0026icirc\u003Btre\u0020un\u0020peu\u0020de\u0020pratique\u0020et\u0020d\u0027apprentissage.\u0020Comprendre\u0020les\u0020ronronnements\u0020du\u0020chat\u0020Le\u0020myst\u0026egrave\u003Bre\u0020des\u0020ronronnements\u0020Tant\u0020le\u0020m\u0026eacute\u003Bcanisme\u0020que\u0020la\u0020signification\u0020des\u0020ronronnements\u0020du\u0020chat\u0020demeurent\u0020myst\u0026eacute\u003Brieux,\u0020m\u0026ecirc\u003Bme\u0020si\u0020des\u0020amorces\u0020d\u0027explications\u0020sont\u0020aujourd\u0027hui\u0020propos\u0026eacute\u003Bes\u0020par\u0020les\u0020sp\u0026eacute\u003Bcialistes.\u0020Ainsi,\u0020l\u0027on\u0020sait\u0020que\u0020cette\u0020vocalisation\u0020se\u0020produit\u0020aussi\u0020bien\u0020\u0026agrave\u003B\u0020l\u0027inspiration\u0020qu\u0027\u0026agrave\u003B\u0020l\u0027expiration.\u0020La\u0020contraction\u0020du\u0020larynx\u0020provoquerait\u0020une\u0020vibration\u0020des\u0020cordes\u0020vocales\u0020du\u0020chat.\u0020Pour\u0020autant,\u0020les\u0020ronronnements,\u0020souvent\u0020interpr\u0026eacute\u003Bt\u0026eacute\u003Bs\u0020par\u0020les\u0020ma\u0026icirc\u003Btres\u0020comme\u0020des\u0020signes\u0020de\u0020volupt\u0026eacute\u003B\u0020et\u0020de\u0020bien\u002D\u0026ecirc\u003Btre,\u0020constituent\u0020un\u0020langage\u0020ambigu,\u0020puisqu\u0027ils\u0020peuvent\u0020signifier\u0020aussi\u0020bien\u0020le\u0020plaisir\u0020que\u0020la\u0020souffrance.\u0020On\u0020sait\u0020en\u0020effet\u0020qu\u0027un\u0020chat\u0020qui\u0020souffre\u0020peut\u0020ronronner\u0020pour\u0020se\u0020rassurer.\u0020Les\u0020ronrons\u0020f\u0026eacute\u003Blins,\u0020loin\u0020de\u0020ne\u0020manifester\u0020que\u0020le\u0020bonheur,\u0020peuvent\u0020donc\u0020aussi\u0020\u0026ecirc\u003Btre\u0020un\u0020signe\u0020de\u0020maladie\u0020ou\u0020de\u0020douleur.\u0020Bienfaisantes\u0020vibrations\u0020Le\u0020ronronnement\u0020appara\u0026icirc\u003Bt\u0020chez\u0020le\u0020chaton\u0020d\u0026egrave\u003Bs\u0020l\u0027\u0026acirc\u003Bge\u0020de\u0020deux\u0020jours,\u0020lors\u0020de\u0020la\u0020t\u0026eacute\u003Bt\u0026eacute\u003Be.\u0020Une\u0020port\u0026eacute\u003Be\u0020de\u0020chatons\u0020qui\u0020t\u0026ecirc\u003Bte\u0020peut\u0020ainsi\u0020produire\u0020un\u0020concert\u0020impressionnant.\u0020Une\u0020fois\u0020adulte,\u0020le\u0020chat\u0020ronronne\u0020sous\u0020les\u0020c\u0026acirc\u003Blins.\u0020Certains\u0020produisent\u0020aussi\u0020ces\u0020vibrations\u0020lorsque\u0020la\u0020nourriture\u0020propos\u0026eacute\u003Be\u0020est\u0020particuli\u0026egrave\u003Brement\u0020appr\u0026eacute\u003Bci\u0026eacute\u003Be.\u0020Le\u0020paradoxe\u0020que\u0020constituent\u0020les\u0020ronronnements\u0020de\u0020souffrance\u0020peut\u0020\u0026ecirc\u003Btre\u0020r\u0026eacute\u003Bsolu\u0020d\u0026egrave\u003Bs\u0020lors\u0020que\u0020l\u0027on\u0020consid\u0026egrave\u003Bre\u0020ce\u0020m\u0026eacute\u003Bcanisme\u0020vibratoire\u0020comme\u0020un\u0020r\u0026eacute\u003Bflexe\u0020permettant\u0020au\u0020chat\u0020la\u0020r\u0026eacute\u003Bgression\u0020vers\u0020un\u0020moment\u0020de\u0020bien\u002D\u0026ecirc\u003Btre\u0020complet\u0020\u003A\u0020celui\u0020de\u0020la\u0020t\u0026eacute\u003Bt\u0026eacute\u003Be\u0020et\u0020de\u0020proximit\u0026eacute\u003B\u0020absolue\u0020avec\u0020la\u0020m\u0026egrave\u003Bre.\u0020Outre\u0020leurs\u0020propri\u0026eacute\u003Bt\u0026eacute\u003Bs\u0020anti\u002Dstress,\u0020dont\u0020b\u0026eacute\u003Bn\u0026eacute\u003Bficie\u0020aussi\u0020le\u0020ma\u0026icirc\u003Btre\u0020qui\u0020partage\u0020un\u0020moment\u0020de\u0020d\u0026eacute\u003Btente\u0020avec\u0020son\u0020chat,\u0020les\u0020ronronnements\u0020auraient,\u0020selon\u0020certaines\u0020hypoth\u0026egrave\u003Bses,\u0020celle\u0020d\u0027acc\u0026eacute\u003Bl\u0026eacute\u003Brer\u0020la\u0020gu\u0026eacute\u003Brison.\u0020\u0020Comprendre\u0020les\u0020miaulements\u0020du\u0020chat\u0020Les\u0020miaulements\u0020\u003A\u0020un\u0020langage\u0020destin\u0026eacute\u003B\u0020\u0026agrave\u003B\u0020l\u0027\u0026ecirc\u003Btre\u0020humain\u0020Entre\u0020eux,\u0020les\u0020chats\u0020ne\u0020miaulent\u0020pas.\u0020Ils\u0020d\u0026eacute\u003Bveloppent\u0020un\u0020autre\u0020type\u0020de\u0020vocalisations,\u0020comme\u0020le\u0020cri\u0020de\u0020guerre\u0020du\u0020m\u0026acirc\u003Ble\u0020qui\u0020rencontre\u0020un\u0020rival\u0020ou\u0020l\u0027appel\u0020plaintif\u0020de\u0020la\u0020femelle\u0020lorsqu\u0027elle\u0020est\u0020en\u0020chaleur\u0020et\u0020veut\u0020attirer\u0020les\u0020matous.\u0020Les\u0020miaulements\u0020constituent\u0020une\u0020forme\u0020de\u0020langage\u0020que\u0020le\u0020chat\u0020n\u0027utilise\u0020qu\u0027avec\u0020l\u0027\u0026ecirc\u003Btre\u0020humain.\u0020On\u0020observe\u0020ainsi\u0020que\u0020les\u0020chats\u0020sauvages\u0020ou\u0020harets\u0020ne\u0020miaulent\u0020pas,\u0020ou\u0020tr\u0026egrave\u003Bs\u0020peu.\u0020D\u0027autres\u0020vocalises\u0020sont\u0020parfois\u0020confondues\u0020avec\u0020les\u0020miaulements,\u0020comme\u0020le\u0020chirping,\u0020suite\u0020modul\u0026eacute\u003Be\u0020de\u0020petits\u0020cris\u0020pouss\u0026eacute\u003Bs\u0020par\u0020le\u0020chat\u0020qui\u0020observe\u0020un\u0020oiseau\u0020qu\u0027il\u0020sait\u0020inaccessible.\u0020Mais\u0020le\u0020traditionnel\u0020\u0022miaou\u0022,\u0020avec\u0020toutes\u0020ses\u0020variations\u0020de\u0020tonalit\u0026eacute\u003B\u0020et\u0020d\u0027intensit\u0026eacute\u003B,\u0020s\u0027adresse\u0020au\u0020ma\u0026icirc\u003Btre.\u0020D\u0026eacute\u003Bcrypter\u0020les\u0020vocalisations\u0020D\u0026eacute\u003Bcrypter\u0020les\u0020vocalisations\u0020de\u0020son\u0020chat\u0020s\u0027apprend\u0020avec\u0020le\u0020temps.\u0020La\u0020proximit\u0026eacute\u003B\u0020affective\u0020avec\u0020l\u0027animal\u0020facilite\u0020grandement\u0020la\u0020communication.\u0020Le\u0020chat\u0020est\u0020capable\u0020d\u0027apprendre\u0020les\u0020termes\u0020du\u0020langage\u0020humain\u0020qui\u0020le\u0020concernent\u0020et\u0020qui\u0020lui\u0020sont\u0020r\u0026eacute\u003Bp\u0026eacute\u003Bt\u0026eacute\u003Bs.\u0020De\u0020m\u0026ecirc\u003Bme,\u0020le\u0020ma\u0026icirc\u003Btre\u0020finit\u0020par\u0020associer\u0020des\u0020significations,\u0020des\u0020intentions\u0020et\u0020des\u0020\u0026eacute\u003Btats\u0020affectifs\u0020aux\u0020vocalisations\u0020de\u0020son\u0020f\u0026eacute\u003Blin.\u0020Voici\u0020quelques\u0020indications\u0020g\u0026eacute\u003Bn\u0026eacute\u003Brales\u0020\u003A\u0020miaulement\u0020court\u0020\u0028deux\u0020tons\u0029\u0020\u003A\u0020accueil,\u0020salutation\u0020\u003Bmiaulement\u0020en\u0020demi\u002Dton\u0020ou\u0020plus\u0020profond\u0020\u003A\u0020demande,\u0020r\u0026eacute\u003Bclamation\u0020\u003Bmiaulement\u0020aigu\u0020\u003A\u0020douleur,\u0020plainte\u0020\u003Bgrognement\u0020\u003A\u0020m\u0026eacute\u003Bcontentement.\u0020Les\u0020tonalit\u0026eacute\u003Bs\u0020varient\u0020\u0026eacute\u003Bvidemment\u0020selon\u0020le\u0020sexe,\u0020mais\u0020aussi\u0020la\u0020race\u0020du\u0020chat,\u0020c\u0027est\u0020ce\u0020qui\u0020rend\u0020la\u0020communication\u0020verbale\u0020de\u0020chaque\u0020animal\u0020unique\u0020et\u0020permet\u0020au\u0020ma\u0026icirc\u003Btre\u0020de\u0020reconna\u0026icirc\u003Btre\u0020son\u0020appel\u0020en\u0020le\u0020diff\u0026eacute\u003Brenciant\u0020de\u0020celui\u0020d\u0027autres\u0020chats.\u0020Comprendre\u0020les\u0020attitudes\u0020du\u0020chat\u0020\u0028il\u0020remue\u0020la\u0020queue,\u0020il\u0020se\u0020met\u0020sur\u0020le\u0020dos,\u0020il\u0020baille,\u0020il\u0020siffle\u0020ou\u0020crache\u0026hellip\u003B\u0029\u0020La\u0020communication\u0020non\u0020verbale\u0020du\u0020chat\u0020La\u0020plus\u0020grande\u0020partie\u0020de\u0020la\u0020communication\u0020du\u0020chat\u0020est\u0020non\u0020verbale.\u0020Il\u0020s\u0027agit\u0020de\u0020postures\u0020ou\u0020d\u0027attitudes,\u0020que\u0020celles\u002Dci\u0020concernent\u0020l\u0027ensemble\u0020du\u0020corps,\u0020comme\u0020lorsque\u0020le\u0020chat\u0020se\u0020met\u0020sur\u0020le\u0020dos,\u0020ou\u0020qu\u0027elles\u0020impliquent\u0020un\u0020organe\u0020particulier,\u0020comme\u0020la\u0020queue.\u0020Le\u0020r\u0026eacute\u003Bpertoire\u0020de\u0020communication\u0020du\u0020chat\u0020utilise\u0020aussi\u0020une\u0020combinaison\u0020de\u0020signifiants,\u0020par\u0020exemple\u0020des\u0020crachements,\u0020des\u0020sifflements\u0020ou\u0020des\u0020grognements\u0020combin\u0026eacute\u003Bs\u0020\u0026agrave\u003B\u0020une\u0020posture\u0020de\u0020menace,\u0020de\u0020d\u0026eacute\u003Bfense\u0020ou\u0020d\u0027attaque,\u0020avec\u0020poil\u0020h\u0026eacute\u003Briss\u0026eacute\u003B.\u0020Tout\u0020naturellement,\u0020le\u0020chat\u0020consid\u0026egrave\u003Bre\u0020que\u0020le\u0020ma\u0026icirc\u003Btre\u0020pratique\u0020comme\u0020lui\u0020la\u0020communication\u0020par\u0020postures\u0020et\u0020par\u0020gestes.\u0020Il\u0020est\u0020donc\u0020tr\u0026egrave\u003Bs\u0020sensible\u0020aux\u0020attitudes\u0020de\u0020l\u0027\u0026ecirc\u003Btre\u0020humain.\u0020Il\u0020faut\u0020donc\u0020se\u0020surveiller\u0020en\u0020sa\u0020pr\u0026eacute\u003Bsence\u0020pour\u0020ne\u0020pas\u0020l\u0027inqui\u0026eacute\u003Bter.\u0020Les\u0020yeux,\u0020la\u0020queue\u0020et\u0020les\u0020oreilles\u0020\u003A\u0020tout\u0020un\u0020langage\u0020Le\u0020chat\u0020se\u0020sert\u0020des\u0020positions\u0020de\u0020la\u0020queue\u0020et\u0020des\u0020oreilles\u0020pour\u0020communiquer.\u0020Une\u0020queue\u0020lev\u0026eacute\u003Be\u0020en\u0020point\u0020d\u0027interrogation\u0020est\u0020une\u0020marque\u0020d\u0027accueil\u0020et\u0020de\u0020joie.\u0020A\u0020l\u0027inverse,\u0020si\u0020la\u0020queue\u0020est\u0020basse,\u0020le\u0020chat\u0020a\u0020peur.\u0020L\u0027organe\u0020est\u0020h\u0026eacute\u003Briss\u0026eacute\u003B\u0020si\u0020l\u0027animal\u0020est\u0020en\u0020col\u0026egrave\u003Bre\u0020ou\u0020en\u0020cas\u0020d\u0027agression.\u0020Un\u0020chat\u0020qui\u0020bat\u0020de\u0020la\u0020queue\u0020manifeste\u0020l\u0027excitation.\u0020Le\u0020langage\u0020de\u0020la\u0020queue\u0020peut\u0020\u0026ecirc\u003Btre\u0020combin\u0026eacute\u003B\u0020aux\u0020postures\u0020des\u0020oreilles\u0020\u003A\u0020couch\u0026eacute\u003Bes\u0020en\u0020arri\u0026egrave\u003Bre\u0020en\u0020cas\u0020de\u0020peur\u0020ou\u0020d\u0027agression,\u0020droites\u0020ou\u0020l\u0026eacute\u003Bg\u0026egrave\u003Brement\u0020en\u0020avant\u0020pour\u0020signifier\u0020l\u0027int\u0026eacute\u003Br\u0026ecirc\u003Bt.\u0020Les\u0020yeux\u0020dilat\u0026eacute\u003Bs\u0020sont\u0020un\u0020signe\u0020d\u0027excitation.\u0020Un\u0020chat\u0020qui\u0020appr\u0026eacute\u003Bcie\u0020son\u0020ma\u0026icirc\u003Btre\u0020et\u0020se\u0020sent\u0020\u0026agrave\u003B\u0020l\u0027aise\u0020cligne\u0020plusieurs\u0020fois\u0020des\u0020yeux.\u0020Le\u0020langage\u0020des\u0020c\u0026acirc\u003Blins\u0020\u003A\u0020pour\u0020dire\u0020\u0022Je\u0020t\u0027aime\u0022\u0020Les\u0020c\u0026acirc\u003Blins\u0020que\u0020le\u0020chat\u0020prodigue\u0020\u0026agrave\u003B\u0020l\u0027\u0026ecirc\u003Btre\u0020humain\u0020sont\u0020porteurs\u0020de\u0020signification.\u0020Il\u0020frotte\u0020son\u0020corps\u0020aux\u0020jambes\u0020pour\u0020y\u0020d\u0026eacute\u003Bposer\u0020ses\u0020ph\u0026eacute\u003Bromones\u0020et\u0020indiquer\u0020que\u0020la\u0020personne\u0020lui\u0020appartient.\u0020S\u0027il\u0020frotte\u0020sa\u0020queue\u0020et\u0020sa\u0020t\u0026ecirc\u003Bte,\u0020c\u0027est\u0020en\u0020guise\u0020d\u0027accueil\u0020chaleureux.\u0020Certains\u0020chats\u0020se\u0020servent\u0020de\u0020ces\u0020deux\u0020rituels\u0020pour\u0020r\u0026eacute\u003Bclamer\u0020leur\u0020nourriture\u0020ou\u0020de\u0020l\u0027attention.\u0020En\u0020frottant\u0020sa\u0020t\u0026ecirc\u003Bte\u0020contre\u0020celle\u0020du\u0020ma\u0026icirc\u003Btre,\u0020le\u0020chat\u0020lui\u0020dit\u0020\u003A\u0020\u0022Je\u0020t\u0027aime\u0022.\u0020De\u0020m\u0026ecirc\u003Bme,\u0020tous\u0020les\u0020gestes\u0020de\u0020toilettage\u0020sont\u0020des\u0020signes\u0020d\u0027affection.\u0020Le\u0020chat\u0020peut\u0020vouloir\u0020toiletter\u0020son\u0020ma\u0026icirc\u003Btre\u0020en\u0020lui\u0020l\u0026eacute\u003Bchant\u0020les\u0020doigts\u0020ou\u0020le\u0020visage,\u0020il\u0020peut\u0020encore\u0020esquisser\u0020un\u0020bisou\u0020ou\u0020mordiller\u0020les\u0020cheveux.\u0020Chat\u0020couch\u0026eacute\u003B\u0020sur\u0020le\u0020dos\u0020\u003A\u0020attention\u0020aux\u0020erreurs\u0020d\u0027interpr\u0026eacute\u003Btation\u0020\u0021\u0020On\u0020pense\u0020souvent\u0020qu\u0027un\u0020chat\u0020couch\u0026eacute\u003B\u0020sur\u0020le\u0020dos\u0020veut\u0020jouer\u0020ou\u0020qu\u0027il\u0020s\u0027agit\u0020d\u0027une\u0020invitation\u0020\u0026agrave\u003B\u0020lui\u0020caresser\u0020sur\u0020le\u0020ventre.\u0020La\u0020majorit\u0026eacute\u003B\u0020des\u0020chats\u0020d\u0026eacute\u003Bteste\u0020qu\u0027on\u0020leur\u0020touche\u0020le\u0020ventre\u0020et\u0020le\u0020ma\u0026icirc\u003Btre\u0020risque\u0020tout\u0020simplement\u0020de\u0020se\u0020faire\u0020mordre\u0020ou\u0020griffer.\u0020Ceux\u0020qui\u0020sont\u0020particuli\u0026egrave\u003Brement\u0020en\u0020confiance\u0020tol\u0026eacute\u003Breront\u0020ce\u0020contact\u0020pendant\u0020quelques\u0020instants.\u0020La\u0020posture\u0020couch\u0026eacute\u003Be\u0020sur\u0020le\u0020dos\u0020peut\u0020avoir\u0020plusieurs\u0020significations\u0020\u003A\u0020la\u0020plus\u0020courante\u0020est\u0020que\u0020le\u0020chat\u0020se\u0020sent\u0020bien\u0020et\u0020relax\u0026eacute\u003B,\u0020ce\u0020qui\u0020n\u0027est\u0020pas\u0020une\u0020invitation\u0020\u0026agrave\u003B\u0020le\u0020d\u0026eacute\u003Branger.\u0020A\u0020la\u0020saison\u0020des\u0020amours,\u0020m\u0026acirc\u003Bles\u0020et\u0020femelles\u0020manifestent\u0020leur\u0020excitation\u0020en\u0020se\u0020roulant\u0020sur\u0020le\u0020dos,\u0020parfois\u0020en\u0020rond.\u0020Ils\u0020laissent\u0020ainsi\u0020de\u0020pr\u0026eacute\u003Bcieuses\u0020marques\u0020olfactives\u0020sur\u0020le\u0020sol,\u0020facilitant\u0020la\u0020rencontre.\u0020\u0020Comment\u0020votre\u0020chat\u0020vous\u0020communique\u002Dt\u002Dil\u0020son\u0020mal\u002D\u0026ecirc\u003Btre\u0020\u003F\u0020Les\u0020chats\u0020sont\u0020extr\u0026ecirc\u003Bmement\u0020r\u0026eacute\u003Bsistants\u0020\u0026agrave\u003B\u0020la\u0020douleur\u0020et\u0020la\u0020manifestent\u0020g\u0026eacute\u003Bn\u0026eacute\u003Bralement\u0020peu.\u0020Il\u0020est\u0020donc\u0020parfois\u0020difficile\u0020de\u0020savoir\u0020s\u0027ils\u0020souffrent\u0020et\u0020s\u0027il\u0020faut\u0020consulter\u0020en\u0020urgence.\u0020Un\u0020chat\u0020qui\u0020feule,\u0020grogne\u0020de\u0020mani\u0026egrave\u003Bre\u0020modul\u0026eacute\u003Be\u0020et\u0020essaie\u0020de\u0020mordre\u0020quand\u0020vous\u0020le\u0020touchez\u0020peut\u0020\u0026ecirc\u003Btre\u0020s\u0026eacute\u003Brieusement\u0020bless\u0026eacute\u003B\u0020\u0028\u0026agrave\u003B\u0020la\u0020patte\u0020ou\u0020par\u0020un\u0020abc\u0026egrave\u003Bs,\u0020par\u0020exemple\u0029\u0020\u003B\u0020un\u0020chat\u0020qui\u0020se\u0020recroqueville\u0020pour\u0020ne\u0020plus\u0020bouger\u0020ou\u0020qui\u0020marche\u0020comme\u0020sur\u0020des\u0020\u0026oelig\u003Bufs\u0020devra\u0020\u0026ecirc\u003Btre\u0020conduit\u0020chez\u0020un\u0020praticien.\u0020Dr\u0020Elisabeth\u0020Tan\u0026eacute\u003B,\u0020v\u0026eacute\u003Bt\u0026eacute\u003Brinaire. ",
+        "articleSection": "Comportement\u0020du\u0020chat",
+        "description": "Certains\u0020chats\u0020sont\u0020plus\u0020bavards\u0020que\u0020d\u0027autres,\u0020mais\u0020tous\u0020s\u0027expriment,\u0020que\u0020ce\u0020soit\u0020par\u0020des\u0020vocalises,\u0020des\u0020ronronnements\u0020ou\u0020encore\u0020par\u0020leurs\u0020attitudes\u0020et\u0020leurs\u0020positions.\u0020Le\u0020chat\u0020communique\u0020avec\u0020son\u0020ma\u00EEtre,\u0020\u00E0\u0020lui\u0020de\u0020savoir\u0020d\u00E9crypter\u0020le\u0020langage\u0020de\u0020son\u0020animal.",
+        "keywords": [""],
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.doctissimo.fr/animaux/chat/comportement-chat/le-langage-du-chat"
+        },
+        "image": [
+            
+                {
+                   
+"@type": "ImageObject",
+"url": "https://resize2.prod.docfr.doc-media.fr/rcrop/1200,678,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/le-langage-du-chat/712285-4-fre-FR/le-langage-du-chat.jpg",
+"width": "1200"
+,"height": "678" 
+                },
+                {
+                    
+"@type": "ImageObject",
+"url": "https://resize2.prod.docfr.doc-media.fr/rcrop/1200,902,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/le-langage-du-chat/712285-4-fre-FR/le-langage-du-chat.jpg",
+"width": "1200"
+,"height": "902" 
+                },
+                {
+                    
+"@type": "ImageObject",
+"url": "https://resize1.prod.docfr.doc-media.fr/s/1200/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/le-langage-du-chat/712283-4-fre-FR/le-langage-du-chat.jpg",
+"width": "1200"
+,"height": "1200" 
+
+                }
+                    ],
+                                        "author": {
+                "@type": "Person",
+                "name": "La rédaction de Doctissimo",
+                                "url": "https://www.doctissimo.fr/equipe/auteurs/la-redaction"
+            },
+                "publisher": {
+            "@type": "Organization",
+            "name": "Doctissimo",
+            "url": "https://www.doctissimo.fr/",
+            "sameAS": "https://fr.wikipedia.org/wiki/Doctissimo",
+            "logo": {
+                   
+"@type": "ImageObject",
+"url": "https://cdn1.prod.docfr.doc-media.fr/build/images/refonte/logos/doctissimo.png",
+"width": "600"
+,"height": "60" 
+            }
+        }
+    }
+</script>
+
+            <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "MedicalWebPage",
+        "headline": "Décrypter le langage de son chat",
+        "alternateName": "Le langage du chat",
+        "lastReviewed": "2017-08-24T19:06:04+02:00"
+                                ,"reviewedBy": [
+                {
+                    "@type": "Person",
+                    "name": "Jesus Cardenas",
+                    "url": "https://www.doctissimo.fr/equipe/les-experts-de-doctissimo/jesus-cardenas"
+                }
+            ]
+            }
+</script>
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "url": "https://www.doctissimo.fr/animaux/chat/comportement-chat/le-langage-du-chat",
+    "numberOfItems": "10",
+    "itemListElement": [
+                {
+                "@type": "ListItem",
+                "position": "1",
+                "url": "https://www.doctissimo.fr/animaux/chat",
+                "name": "Chats",
+                "image": ""
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "2",
+                "url": "https://www.doctissimo.fr/animaux/chat/chat-age/fin-de-vie-du-chat",
+                "name": "Comment savoir si votre chat est en fin de vie ?",
+                "image": "https://cdn.prod.docfr.doc-media.fr/var/doctissimo/storage/images/fr/www/animaux/chat/chat-age/fin-de-vie-du-chat/723933-2-fre-FR/fin-de-vie-du-chat.jpg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "3",
+                "url": "https://www.doctissimo.fr/animaux/chien/comportement-chien/langage-du-chien",
+                "name": "Décodez le langage de votre chien ",
+                "image": "https://cdn3.prod.docfr.doc-media.fr/var/doctissimo/storage/images/fr/www/animaux/chien/comportement-chien/langage-du-chien/720669-3-fre-FR/langage-du-chien.jpg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "4",
+                "url": "https://www.doctissimo.fr/animaux/chat/comportement-chat",
+                "name": "Comportement du chat",
+                "image": "https://cdn.prod.docfr.doc-media.fr/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/698607-3-fre-FR/comportement-chat.jpg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "5",
+                "url": "https://www.doctissimo.fr/animaux/chat/soins-chat",
+                "name": "Prendre soin de son chat",
+                "image": "https://cdn2.prod.docfr.doc-media.fr/var/doctissimo/storage/images/fr/www/animaux/chat/soins-chat/698943-3-fre-FR/soins-chat.jpg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "6",
+                "url": "https://www.doctissimo.fr/animaux/chat/reproduction-chat/sterilisation-du-chat",
+                "name": "Faire stériliser mon chat : pourquoi et comment ?",
+                "image": "https://cdn.prod.docfr.doc-media.fr/var/doctissimo/storage/images/fr/www/animaux/chat/reproduction-chat/sterilisation-du-chat/729807-3-fre-FR/sterilisation-du-chat.jpg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "7",
+                "url": "https://www.doctissimo.fr/animaux/chat/soins-chat/vermifuger-son-chat",
+                "name": "Comment vermifuger son chat ?",
+                "image": "https://cdn2.prod.docfr.doc-media.fr/var/doctissimo/storage/images/fr/www/animaux/chat/soins-chat/vermifuger-son-chat/707425-4-fre-FR/vermifuger-son-chat.jpg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "8",
+                "url": "https://www.doctissimo.fr/animaux/chat/comportement-chat/sommeil-du-chat",
+                "name": "Le sommeil du chat",
+                "image": "https://cdn1.prod.docfr.doc-media.fr/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/sommeil-du-chat/711583-4-fre-FR/sommeil-du-chat.jpg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "9",
+                "url": "https://www.doctissimo.fr/animaux/chat/maladies-chat/conjonctivite-du-chat",
+                "name": "Conjonctivite du chat",
+                "image": "https://cdn2.prod.docfr.doc-media.fr/var/doctissimo/storage/images/fr/www/animaux/chat/maladies-chat/conjonctivite-du-chat/707317-3-fre-FR/conjonctivite-du-chat.jpg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "10",
+                "url": "https://www.doctissimo.fr/animaux/chat/maladies-chat",
+                "name": "Maladies du chat",
+                "image": "https://cdn1.prod.docfr.doc-media.fr/var/doctissimo/storage/images/fr/www/animaux/chat/maladies-chat/699087-4-fre-FR/maladies-chat.jpg"
+            }
+        ]
+}
+</script>
+
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Webpage",
+    "lastReviewed": "2017-08-24T19:06:04+02:00",
+    "relatedLink": ["https://www.doctissimo.fr/animaux/chat", "https://www.doctissimo.fr/animaux/chat/chat-age/fin-de-vie-du-chat", "https://www.doctissimo.fr/animaux/chien/comportement-chien/langage-du-chien", "https://www.doctissimo.fr/animaux/chat/comportement-chat", "https://www.doctissimo.fr/animaux/chat/soins-chat", "https://www.doctissimo.fr/animaux/chat/reproduction-chat/sterilisation-du-chat", "https://www.doctissimo.fr/animaux/chat/soins-chat/vermifuger-son-chat", "https://www.doctissimo.fr/animaux/chat/comportement-chat/sommeil-du-chat", "https://www.doctissimo.fr/animaux/chat/maladies-chat/conjonctivite-du-chat", "https://www.doctissimo.fr/animaux/chat/maladies-chat"]
+}
+</script>
+
+    <!--300_atf,dyninfeed-->
+
+    <script type="text/javascript">
+    var sha256=function r(o){function f(r,o){return r>>>o|r<<32-o}for(var t,n,a=Math.pow,c=a(2,32),e="length",i="",h=[],u=8*o[e],v=r.h=r.h||[],l=r.k=r.k||[],s=l[e],g={},k=2;64>s;k++)if(!g[k]){for(t=0;313>t;t+=k)g[t]=k;v[s]=a(k,.5)*c|0,l[s++]=a(k,1/3)*c|0}for(o+="";o[e]%64-56;)o+="\0";for(t=0;t<o[e];t++){if((n=o.charCodeAt(t))>>8)return;h[t>>2]|=n<<(3-t)%4*8}for(h[h[e]]=u/c|0,h[h[e]]=u,n=0;n<h[e];){var d=h.slice(n,n+=16),p=v;for(v=v.slice(0,8),t=0;64>t;t++){var w=d[t-15],A=d[t-2],C=v[0],M=v[4],S=v[7]+(f(M,6)^f(M,11)^f(M,25))+(M&v[5]^~M&v[6])+l[t]+(d[t]=16>t?d[t]:d[t-16]+(f(w,7)^f(w,18)^w>>>3)+d[t-7]+(f(A,17)^f(A,19)^A>>>10)|0);(v=[S+((f(C,2)^f(C,13)^f(C,22))+(C&v[1]^C&v[2]^v[1]&v[2]))|0].concat(v))[4]=v[4]+S|0}for(t=0;8>t;t++)v[t]=v[t]+p[t]|0}for(t=0;8>t;t++)for(n=3;n+1;n--){var b=v[t]>>8*n&255;i+=(16>b?0:"")+b.toString(16)}return i};    var device="",device_ua="";let userAgent=navigator.userAgent.toLowerCase();/(android|iphone|ipad|blackberry|symbian|symbianos|symbos|netfront|model-orange|javaplatform|iemobile|windows phone|samsung|htc|opera mobile|opera mobi|opera mini|presto|huawei|blazer|bolt|doris|fennec|gobrowser|iris|maemo browser|mib|cldc|minimo|semc-browser|skyfire|teashark|teleca|uzard|uzardweb|meego|nokia|bb10|playbook)/gi.test(userAgent)?screen.width>=480&&screen.height>=800||screen.width>=800&&screen.height>=480||navigator.userAgent.match(/ipad/gi)?(device="tablette",device_ua="tablette"):(device="mobile",device_ua="mobile"):(device="desktop",device_ua="desktop");    var readCookie=readCookie||function(n){var r,e,t=n.concat("="),o=document.cookie.split(";");for(e=0;e<o.length;e+=1){for(r=o[e];" "===r.charAt(0);)r=r.substring(1);if(0===r.indexOf(t))return r.substring(t.length,r.length)}return null};
+    var af_consentInternetTargeting = true;
+    var af_consentAdsTargeting = true;
+
+    if (typeof(window.__cmp) !== 'undefined' && typeof(window.__cmp.getCustomConsentBeforeLoad) !== 'undefined') {
+        var customCookieData = JSON.parse(window.__cmp.getCustomConsentBeforeLoad());
+
+        if (customCookieData !== null) {
+            if (typeof(customCookieData.internet_targeting) !== 'undefined') {
+                af_consentInternetTargeting = customCookieData.internet_targeting;
+            }
+
+            if (typeof(customCookieData.ads_targeting) !== 'undefined') {
+                af_consentAdsTargeting = customCookieData.ads_targeting;
+            }
+        }
+    }
+
+    const pageIds = {"animaux":"section_animals","beaute":"section_beauty","bebe":"section_baby","famille":"section_family","forme":"section_fit","grossesse":"section_pregnancy","medicaments":"section_drugs","medecines-douces":"section_altmed","mode":"section_fashion","nutrition":"section_nutrition","psychologie":"section_psycho","sante":"section_health","sexualite":"section_sexo","videos":"section_video","recettes":"section_food","home":"homepage","homepageprincipale":"homepage","tool_maternity":"tool_maternity"};
+
+    var segment = window.afSession ? afSession.getSegment() : 0;
+
+    
+        
+        var othersData = {
+    "client": "none",
+    "cm_section": "animaux",
+    "cm_rubrique": "chat",
+    "section": "animaux",
+    "subsection": "chat",
+    "level1": "animaux",
+    "level2": "chat",
+    "level3": "psychologie-chat",
+    "level4": "comportement-chat",
+    "level_1": "animaux",
+    "level_2": "chat",
+    "level_3": "psychologie-du-chat",
+    "contenttype": "article",
+    "content_tpl": "article",
+    "content_class": "article",
+    "content_keywords": "",
+    "seo_tag": "",
+    "env": "prod",
+    "ops_tag": "none",
+    "url": "www.doctissimo.fr/animaux/chat/psychologie-chat/comportement-chat/le-langage-du-chat",
+        "platform": "desktop",
+    "login": "0",
+    "segment": "0"
+}
+;
+        othersData.platform = device;
+        othersData.login = readCookie('CF_connected') ? 1 : 0;
+        othersData.segment = segment;
+
+    
+    var aufSectionDetected = (othersData.section === 'videos') ? othersData.subsection : othersData.section;
+
+    var sas_dfpPageId = (pageIds[aufSectionDetected]) ? pageIds[aufSectionDetected] : 'others';
+    var sas_formatIds = "banner_atf,300_atf,dyninfeed";
+    var sas_pageId = 1006319;
+    let sas_target = ';platform=' + device;
+    Object.keys(othersData).forEach(function(key){
+        if (othersData[key] !== '' && key !== 'content_keywords') sas_target += ';' + key + '=' + othersData[key];
+    });
+
+        var hasaffi = 0;
+    var hasvideo = 0;
+</script>
+
+    <script type="text/javascript">
+    var i = window,
+        e = document.documentElement,
+        b = document.body;
+
+    let currentUrl = new URL(document.location);
+
+    var segment = window.afSession ? afSession.getSegment() : 0;
+
+    var sp = new URLSearchParams(document.location.search);
+
+    var referrer = document.referrer;
+
+    if (referrer.indexOf('android-app://com.google.android.googlequicksearchbox') !== -1) {
+        sp.set('utm_campaign','');
+        sp.set('utm_source','google services');
+        sp.set('utm_medium','google discover');
+
+        if (history.replaceState) {
+            history.replaceState(null, document.title, document.location.pathname + '?' + sp.toString());
+        }
+    }
+
+    var utmCampaign = sp.get('utm_campaign') ?? '';
+    var utmMedium = sp.get('utm_medium') ?? '';
+    var utmSource = sp.get('utm_source') ?? '';
+
+    
+            var data_page = {
+    "section": "animaux",
+    "subSection": "chat",
+    "sectionId": 53033,
+    "subSectionId": 53035,
+    "ID": 53827,
+    "IDSection": "e4cad3c8-3553-431e-984d-be784696940e",
+    "IDSubSection": "08528b85-67f4-4cf5-aca9-1c51d81ed5e5",
+    "UID": "0aebaaad-04e2-4da6-b538-58ceefe9f3df",
+    "URLBO": "www.doctissimo.fr/animaux/chat/psychologie-chat/comportement-chat/le-langage-du-chat",
+    "mainTag": "",
+    "taxonomy2": null,
+    "secondaryTag": [],
+    "level_1": "animaux",
+    "level_2": "chat",
+    "subSecLvl3": "psychologie-chat",
+    "level_3": "psychologie-du-chat",
+    "subSecLvl4": "comportement-chat",
+    "level_4": "comportement-du-chat",
+    "subSecLvl5": "le-langage-du-chat",
+    "level_5": "decrypter-le-langage-de-son-chat"
+};
+        data_page.version = '';
+        data_page.section = aufSectionDetected;
+
+        var data_content = {
+    "type": "article",
+    "class": "article",
+    "subClass": "article",
+    "author": "La rédaction de Doctissimo",
+    "date": "2015-08-19T09:01:00.000Z",
+    "modificationDate": "2022-02-25T10:06:54.977Z",
+    "label": "Décrypter le langage de son chat",
+    "medReview": "Jesus Cardenas",
+    "premium": false,
+    "wordsCount": 1466,
+    "dynInfeedCount": "",
+    "affiliation": 0
+};
+
+        var data_site = {
+    "platform": "doctissimo",
+    "lang": "fr",
+    "sid": 51,
+    "environment": "prod"
+};
+
+        var data_user = {
+    "id": "",
+    "dom": "",
+    "device": "",
+    "screenResolution": "",
+    "referer": "",
+    "segment": "",
+    "adblocker": "",
+    "isLoggedIn": "",
+    "registrationDate": "",
+    "firstPost": "",
+    "newsletterOptin": "",
+    "registrationType": "",
+    "activity": "",
+    "lastPost": "",
+    "optIn": ""
+};
+        data_user.id = readCookie('CF_user_id') ? "doctissimo_fr-" + sha256('UNIFY-DMP-' + readCookie('CF_user_id')) : '';
+        data_user.dom = "BE";
+        data_user.device =  device;
+        data_user.screenResolution = (i.innerWidth || e.clientWidth || b.clientWidth || 0) + 'x' + (i.innerHeight || e.clientHeight || b.clientHeight || 0);
+        data_user.referer =  referrer;
+        data_user.segment = segment;
+        data_user.adblocker =  "N/A";
+        data_user.isLoggedIn = !!readCookie('CF_connected');
+
+        var data_ops = {
+    "id": "none",
+    "name": "none",
+    "brand": "none"
+};
+
+        var data_utm = {
+    "campaign": "",
+    "medium": "",
+    "source": ""
+};
+        data_utm.campaign = utmCampaign;
+        data_utm.medium = utmMedium;
+        data_utm.source = utmSource;
+
+        window.unify_dataSlayer = window.unify_dataSlayer || [];
+
+        window.unify_dataSlayer.push({
+            "page": data_page,
+            "content": data_content,
+            "site": data_site,
+            "user": data_user,
+            "ops": data_ops,
+            "utm": data_utm
+        });
+
+        var CM_RUBRIQUE = othersData.cm_rubrique;
+        var CM_SECTION1 = othersData.cm_section;
+
+    </script>
+
+        <script>
+        var pegasusConf = {
+            params: {
+                site: 'doctissimo',
+                traffic: 'organic',
+                country: 'FR',
+                keywords: sas_target + ";hasvideo=" + hasvideo + ";hasaffi=" + hasaffi,
+                section: sas_dfpPageId,
+                contenttype: window.unify_dataSlayer[0].content.type,
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://pegasus.unifygroup.com/lib/pegasus.min.js" async></script>
+
+    
+        <script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','unify_dataSlayer','GTM-PGLVR9V');
+
+    </script>
+
+    <script defer src="https://cdn.prod.docfr.doc-media.fr/build/jquery.js"></script>
+
+<script>
+    var trafficing_exclu_300mtf = false;
+
+    var trafficing_exclu_all = (
+        window.unify_dataSlayer[0].page.subSection === 'régimes'                                                // 2021-05-02
+        || window.unify_dataSlayer[0].page.subSecLvl5 === 'lesrumdenuitaurtinolpur-revitaliftlaserdeloralparis' // 2021-05-04
+        || window.unify_dataSlayer[0].page.subSecLvl5 === 'soinjouranti-agerevitaliftfillerdeloralparis'        // 2021-05-08
+        || window.unify_dataSlayer[0].page.subSecLvl3 === 'lethermomtreaxillaireconnecte-torm'                  // 2021-05-16
+        || window.unify_dataSlayer[0].page.subSection === 'vitamine'                                           // 2021-06-12
+    );
+
+    var trafficing_exclu_full = (
+        window.unify_dataSlayer[0].page.level_1 === 'equipe'
+        || window.unify_dataSlayer[0].page.subSecLvl3 === 'test-qi'
+        || window.unify_dataSlayer[0].page.subSecLvl4 === 'panier-100-pourcent-sante-bien-choisir-aide-auditives' // 2021-04-30
+    );
+
+    // Remove dyninfeed for pages in exclu pub
+    window.addEventListener('DOMContentLoaded', function() {
+        if (trafficing_exclu_all || trafficing_exclu_full) {
+            document.querySelectorAll('.doc-block-pub-dyn-infeed').forEach(function(e) {
+                e.remove();
+            });
+        }
+        if (trafficing_exclu_full && document.querySelector('#taboola-below-article-thumbnails')) {
+            document.querySelector('#taboola-below-article-thumbnails').remove();
+        }
+    });
+</script>
+
+
+
+<script>
+    document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'');
+</script>
+
+
+        
+    <link rel="preload" href="https://cdn2.prod.docfr.doc-media.fr/build/article-css.d2d19fd5.css" as="style" media="screen" />
+    <link rel="stylesheet" href="https://cdn2.prod.docfr.doc-media.fr/build/article-css.d2d19fd5.css" media="screen" />
+    <link rel="stylesheet" href="https://cdn2.prod.docfr.doc-media.fr/build/affiliation-css.b3483fc8.css" media="screen" />
+
+    </head>
+<body class="doc-rubric-animaux doc-type-article">
+    
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGLVR9V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        
+                            
+                                                            <header class="">
+    <div class="container">
+        <div class="top-header d-flex justify-content-between align-items-center">
+            <div class="left-items">
+                <span class="light-header social-network-header" data-snh=aHR0cHM6Ly9mci1mci5mYWNlYm9vay5jb20vZG9jdGlzc2ltby8=><a><i class="doc-icon-facebook"></i></a></span>
+                <span class="light-header social-network-header" data-snh=aHR0cHM6Ly93d3cucGludGVyZXN0LmZyL2RvY3Rpc3NpbW8v><a><i class="doc-icon-pinterest"></i></a></span>
+                <span class="light-header social-network-header" data-snh=aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9kb2N0aXNzaW1vLz9obD1mcg==><a><i class="doc-icon-instatagram"></i></a></span>
+                <span class="light-header social-network-header" data-snh=aHR0cHM6Ly93d3cueW91dHViZS5jb20vdXNlci9Eb2N0aXNzaW1v><a><i class="doc-icon-youtube"></i></a></span>
+                <span class="light-header social-network-header" data-snh=aHR0cHM6Ly90d2l0dGVyLmNvbS9kb2N0aXNzaW1v><a><i class="doc-icon-twitter"></i></a></span>
+                <span class="light-header social-network-header" data-snh=aHR0cHM6Ly93d3cudGlrdG9rLmNvbS9AZG9jdGlzc2ltbw==><a><i class="doc-icon-tiktok"></i></a></span>
+                <span class="light-header social-network-header" data-snh=aHR0cHM6Ly9mci5saW5rZWRpbi5jb20vY29tcGFueS9kb2N0aXNzaW1vLmZy><a><i class="doc-icon-linkedin"></i></a></span>
+                <span class="doc-burger-menu" data-url="https://www.doctissimo.fr/header/menu/content"><span></span></span>
+            </div>
+            <div class="header-logo">                    <a href="https://www.doctissimo.fr" title="Doctissimo : Santé et bien être avec Doctissimo">
+                        <img class="logo"
+                             width="238"
+                             height="38"
+                             alt="Doctissimo : Santé et bien être avec Doctissimo"
+                             src="https://cdn3.prod.docfr.doc-media.fr/build/images/refonte/logos/doctissimo-238.svg"
+                             srcset="https://cdn3.prod.docfr.doc-media.fr/build/images/refonte/logos/doctissimo-238.svg 238w,
+                                https://cdn.prod.docfr.doc-media.fr/build/images/refonte/logos/doctissimo-140.svg 140w,
+                                https://cdn1.prod.docfr.doc-media.fr/build/images/refonte/logos/doctissimo-120.svg 120w"
+                             style="aspect-ratio: 238/38"
+                        >
+                    <span class="hidden">Doctissimo</span>
+                </a>
+            </div>            <div class="header-right-item right-items">
+                <a href="https://forum.doctissimo.fr/" class="doc-btn doc-btn--outline-primary">Forums</a>
+                <span><i id="header-icon-search" class="doc-icon-search"></i></span>
+                <div class="search-wrapper">
+                    <form class="d-flex" action="https://www.doctissimo.fr/recherche" method="get">
+                        <input id="doc-search-text" name="search[query]" type="text" autocomplete="off" placeholder="Rechercher" aria-label="Rechercher">
+                        <input type="submit" title="Recherchez sur Doctissimo" value="Go" tabindex="2">
+                        <i class="doc-icon-close color-blue-50"></i>
+                    </form>
+                </div>
+                <span class="light-header">
+                    <a href="https://forum.doctissimo.fr/inscription.html" title="Club Doctissimo"><i class="doc-icon-user"></i></a>
+                </span>
+            </div>
+        </div>
+        <div class="sub-header d-flex justify-content-between align-items-center">
+            <div class="left-items"><span class="doc-burger-menu" data-url="https://www.doctissimo.fr/header/menu/content"><span></span></span></div>
+            <nav class="master-categories d-flex justify-content-between align-items-center">
+                                    <div class="master-categories__dropdown">
+                        <span class="sante" href="#">Santé</span>
+                    </div>
+                                    <div class="master-categories__dropdown">
+                        <span class="famille" href="#">Famille</span>
+                    </div>
+                                    <div class="master-categories__dropdown">
+                        <span class="bienetre" href="#">Bien-Être</span>
+                    </div>
+                            </nav>
+            <div class="right-items"><a href="https://forum.doctissimo.fr/" class="doc-btn doc-btn--outline-primary">Forums</a></div>
+        </div>
+    <div class="coronavirus-banner d-flex doc-pb-3">
+        <a onclick="unify_ua_trackEvent('covid-banner', 'click', 'covid-banner-click')" href="https://www.doctissimo.fr/sante/epidemie/coronavirus-chinois"></a>
+        <a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'Actualite_Covid');" href="https://www.doctissimo.fr/sante/epidemie/coronavirus-chinois" class="banner-item banner-item--left"><span>INFOS<span class="hidden-xs"> Coronavirus</span></span></a>
+        <ul class="banner-item banner-item--middle">
+            <li><a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'Autotest_covid');" href="https://www.doctissimo.fr/sante/epidemie/coronavirus-chinois/autotest-covid-19">Autotest covid</a></li>
+            <li><a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'Omicron');" href="https://www.doctissimo.fr/sante/epidemie/coronavirus/variant-omicron-tout-ce-quil-faut-savoir/58114e_ar.html">Omicron</a></li>
+            <li><a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'Pass_vaccinal');" href="https://www.doctissimo.fr/sante/epidemie/coronavirus/pass-vaccinal-definition-date-lieux-difference-avec-pass-sanitaire/28b595_ar.html">Pass vaccinal</a></li>
+            <li><a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'Vaccination_enfant');" href="https://www.doctissimo.fr/sante/epidemie/coronavirus-chinois/covid-19-vaccination-enfants">Vaccination enfant</a></li>
+            <li><a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'Vaccin_covid');" href="https://www.doctissimo.fr/sante/epidemie/coronavirus-chinois/coronavirus-vaccins-covid-19-pfizer-moderna-astrazeneca-sanofi-russie-chine">Vaccin covid</a></li>
+        </ul>
+    </div>
+
+        <div id="doc-burger-menu-content" class="doc-px-2 doc-py-3">
+                            
+<nav class='hidden'>
+                                    <div class="famille category-underline"><span>Famille</span></div>
+            <ul class="doc-list">
+                                    <li class="hidden-xs "><a role="button">Grossesse</a></li>
+                    <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                        <a href="https://www.doctissimo.fr/html/grossesse/grossesse.htm" class="pull-left col-md-6" role="button">Grossesse</a>
+                        <span class="col-md-6 pull-right">
+                            <i class="doc-icon-arrow-right"></i>
+                        </span>
+                    </li>
+                    <div class="doc-burger-menu__sub ">
+                        <i class="doc-icon-arrow-left"></i><div class="famille category-underline"><span>Famille</span></div>
+                        <a href="https://forum.doctissimo.fr/grossesse-bebe/liste_categorie.htm" class="pull-right">Forums Grossesse</a>
+                        <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/grossesse/grossesse.htm" title="Grossesse">Grossesse</a></div>
+                        <ul class="doc-list doc-list--arrow-right">
+                                                    </ul>
+                    </div>
+                                    <li class="hidden-xs "><a role="button">Bébé</a></li>
+                    <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                        <a href="https://www.doctissimo.fr/html/bebe/bebe.htm" class="pull-left col-md-6" role="button">Bébé</a>
+                        <span class="col-md-6 pull-right">
+                            <i class="doc-icon-arrow-right"></i>
+                        </span>
+                    </li>
+                    <div class="doc-burger-menu__sub ">
+                        <i class="doc-icon-arrow-left"></i><div class="famille category-underline"><span>Famille</span></div>
+                        <a href="https://forum.doctissimo.fr/grossesse-bebe/liste_categorie.htm" class="pull-right">Forums Bébé</a>
+                        <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/bebe/bebe.htm" title="Bébé">Bébé</a></div>
+                        <ul class="doc-list doc-list--arrow-right">
+                                                    </ul>
+                    </div>
+                                    <li class="hidden-xs "><a role="button">Famille</a></li>
+                    <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                        <a href="https://www.doctissimo.fr/html/famille/famille.htm" class="pull-left col-md-6" role="button">Famille</a>
+                        <span class="col-md-6 pull-right">
+                            <i class="doc-icon-arrow-right"></i>
+                        </span>
+                    </li>
+                    <div class="doc-burger-menu__sub ">
+                        <i class="doc-icon-arrow-left"></i><div class="famille category-underline"><span>Famille</span></div>
+                        <a href="https://forum.doctissimo.fr/famille/liste_categorie.htm" class="pull-right">Forums Famille</a>
+                        <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/famille/famille.htm" title="Famille">Famille</a></div>
+                        <ul class="doc-list doc-list--arrow-right">
+                                                    </ul>
+                    </div>
+                                    <li class="hidden-xs "><a role="button">Animaux</a></li>
+                    <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                        <a href="https://www.doctissimo.fr/animaux" class="pull-left col-md-6" role="button">Animaux</a>
+                        <span class="col-md-6 pull-right">
+                            <i class="doc-icon-arrow-right"></i>
+                        </span>
+                    </li>
+                    <div class="doc-burger-menu__sub  doc-burger-menu__sub--open">
+                        <i class="doc-icon-arrow-left"></i><div class="famille category-underline"><span>Famille</span></div>
+                        <a href="https://forum.doctissimo.fr/animaux/liste_categorie.htm" class="pull-right">Forums Animaux</a>
+                        <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/animaux" title="Animaux">Animaux</a></div>
+                        <ul class="doc-list doc-list--arrow-right">
+                                                            <li class="hidden-xs">
+                                    <a role="button" href="https://www.doctissimo.fr/animaux/choisir-son-animal">Choisir votre animal</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Choisir votre animal</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button" href="https://www.doctissimo.fr/animaux/chat">Chats</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Chats</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button" href="https://www.doctissimo.fr/animaux/chien">Chiens</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Chiens</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button" href="https://www.doctissimo.fr/animaux/oiseaux">Oiseaux</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Oiseaux</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button" href="https://www.doctissimo.fr/animaux/furet">Furets</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Furets</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button" href="https://www.doctissimo.fr/animaux/rongeur">Rongeurs</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Rongeurs</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button" href="https://www.doctissimo.fr/animaux/lapin">Lapins</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Lapins</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button" href="https://www.doctissimo.fr/animaux/poissons">Poissons et amphibiens</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Poissons et amphibiens</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button" href="https://www.doctissimo.fr/animaux/nouveaux-animaux-de-compagnie-nac">NAC</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">NAC</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button" href="https://www.doctissimo.fr/animaux/conseil-veterinaire">Conseils vétérinaires</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Conseils vétérinaires</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button" href="https://www.doctissimo.fr/animaux/animaux-domestiques-et-sante">Animaux domestiques et santé de l&#039;homme</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Animaux domestiques et santé de l&#039;homme</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                    </ul>
+                    </div>
+                            </ul>
+                        </nav>
+                    </div>
+    </div>
+</header>
+
+<script>
+    if (typeof device !== 'undefined' && device === 'mobile') {
+        document.getElementsByTagName("header").className += " sticky";
+        document.body.className += " header-sticky";
+    }
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var classname = document.getElementsByClassName("social-network-header");
+        for (var i = 0; i < classname.length; i++) {
+            //click gauche
+            classname[i].addEventListener('click', clickFunction, false);
+            //click droit
+            classname[i].addEventListener('contextmenu', clickFunction, false);
+        }
+    });
+    var clickFunction = function(event) {
+        var attribute = this.getAttribute("data-snh");
+        if(event.ctrlKey) {
+            var newWindow = window.open(decodeURIComponent(window.atob(attribute)), '_blank');
+            newWindow.focus();
+        } else {
+            window.open(decodeURIComponent(window.atob(attribute)),'_blank');
+        }
+    };
+</script>
+<style>
+    .social-network-header:hover {
+        cursor: pointer;
+    }
+</style>
+
+        
+                    <div class="row header-pub-class">
+                <div class="col-md-12">
+                    <div id="banner_atf">
+                                                <div id="banner_atf__container">
+                            <script type="text/javascript">
+        if (!trafficing_exclu_full) {
+            var ads_element_banner_atf = document.createElement('div');
+            ads_element_banner_atf.setAttribute('data-ad', 'banner_atf');
+            ads_element_banner_atf.setAttribute('data-ad-cls', 'keep');
+            document.getElementById('banner_atf__container').appendChild(ads_element_banner_atf);
+        }
+    </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <div id="main-container" class="container">
+                                            <div class="row">
+                    <div class="col-md-12">
+                        <ol class="doc-menu-breadcrumb doc-pl-1 doc-pl-md-0">
+                                        <li class="doc-pl-1">
+                <a href="https://www.doctissimo.fr" title="Accueil">
+            <span>Accueil</span>
+        </a>
+    </li>
+
+            <li class="doc-pl-1">
+            <span class="doc-mr-1"> / </span>
+                <a href="https://www.doctissimo.fr/animaux" title="Animaux">
+            <span>Animaux</span>
+        </a>
+    </li>
+
+        <div class="doc-collapse">
+        <div class="doc-collapse__content collapse" id="sourcesContents" aria-expanded="false" style="height: 0px;">
+                            <li class="doc-pl-1">
+            <span class="doc-mr-1"> / </span>
+                <a href="https://www.doctissimo.fr/animaux/chat" title="Chat">
+            <span>Chat</span>
+        </a>
+    </li>
+
+                            <li class="doc-pl-1">
+            <span class="doc-mr-1"> / </span>
+                <a href="https://www.doctissimo.fr/animaux/chat/psychologie-chat" title="Psychologie du chat">
+            <span>Psychologie du chat</span>
+        </a>
+    </li>
+
+                            <li class="doc-pl-1">
+            <span class="doc-mr-1"> / </span>
+                <a href="https://www.doctissimo.fr/animaux/chat/comportement-chat" title="Comportement du chat">
+            <span>Comportement du chat</span>
+        </a>
+    </li>
+
+                    </div>
+                    <span class="doc-collapse__btn doc-collapse__btn--link collapsed" role="button" data-toggle="collapse" href="#sourcesContents" aria-expanded="false" aria-controls="sourcesContents">
+                <span class="doc-collapse__btn__open">...</span>
+                <span class="doc-collapse__btn__close">...</span>
+            </span>
+            </div>
+                        </ol>
+                    </div>
+                </div>
+            
+    
+                
+            
+                                                <div id="content-container" class="row">
+                                            <div class="col-md-8">
+                                
+
+<div class="doc-content doc-px-2 doc-px-md-0">
+                        
+
+<h1>Décrypter le langage de son chat</h1>
+
+                        <div class="doc-my-3">
+                                                        
+                                                <div class="doc-user">
+                    <a class="doc-user__img-wrapper" href="https://www.doctissimo.fr/equipe/auteurs/la-redaction" title=" La rédaction de Doctissimo">
+        
+                    <img
+                src="https://resize1.prod.docfr.doc-media.fr/r/50,50,center-middle,ffffff,smartcrop/img/var/doctissimo/storage/images/fr/www/equipe/auteurs/la-redaction/584221-6-fre-FR/la-redaction.jpg"
+                alt=" La rédaction de Doctissimo"
+                class="rounded-circle"
+            />
+        
+                    </a>
+        
+        <div class="doc-user__content">
+            <strong>
+                                    <a href="https://www.doctissimo.fr/equipe/auteurs/la-redaction" title=" La rédaction de Doctissimo">
+                
+                     La rédaction de Doctissimo
+
+                                    </a>
+                            </strong>
+
+                    </div>
+    </div>
+
+                                                </div>
+            
+    
+<div class="doc-date-xs doc-my-1">
+        
+                
+                        <span>Mis à jour le&nbsp;<time datetime="2017-08-24T19:06:04+02:00">24/08/2017 à 19h06</time></span>
+            </div>
+
+
+    
+<p class="doc-annonceur text-right"></p>
+<div data-ad-ops-label></div>
+
+
+                                        <div class="doc-my-3">
+                    <picture>
+                        <source media="(max-width: 380px)" srcset="https://resize2.prod.docfr.doc-media.fr/rcrop/380,288,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/le-langage-du-chat/712285-4-fre-FR/le-langage-du-chat.jpg">
+                        <source media="(max-width: 480px)" srcset="https://resize2.prod.docfr.doc-media.fr/rcrop/480,363,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/le-langage-du-chat/712285-4-fre-FR/le-langage-du-chat.jpg">
+                        <source media="(max-width: 1023px)" srcset="https://resize2.prod.docfr.doc-media.fr/rcrop/720,420,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/le-langage-du-chat/712285-4-fre-FR/le-langage-du-chat.jpg">
+                        <source media="(min-width: 1024px)" srcset="https://resize2.prod.docfr.doc-media.fr/rcrop/650,380,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/le-langage-du-chat/712285-4-fre-FR/le-langage-du-chat.jpg">
+                        <img
+                            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            alt="langage du chat"
+                            class="doc-img-responsive-100 rounded-lg lazyload"
+                            data-src="https://resize2.prod.docfr.doc-media.fr/rcrop/480,280,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/le-langage-du-chat/712285-4-fre-FR/le-langage-du-chat.jpg"
+                        >
+                    </picture>
+                </div>
+                        
+                                    
+            <div class="bg-color-blue-0 rounded doc-mt-3 doc-mb-3 doc-p-2 doc-px-md-5 doc-py-md-2">
+                <div class="doc-grid-2-auto color-blue-50 doc-mb-2">
+                    <span class="doc-text-sm"><i class="doc-icon-badge-check doc-mr-1"></i><strong>Validation médicale&nbsp;:</strong></span>
+                    <span class="doc-text-xs text-right">24 August 2017</span>
+                </div>
+
+                    <div class="doc-user">
+                    <a class="doc-user__img-wrapper" href="https://www.doctissimo.fr/equipe/les-experts-de-doctissimo/jesus-cardenas" title="Jesus Cardenas">
+        
+                    <img
+                src="https://resize1.prod.docfr.doc-media.fr/r/50,50,center-middle,ffffff,smartcrop/img/var/doctissimo/storage/images/fr/www/equipe/les-experts-de-doctissimo/jesus-cardenas/4935326-9-fre-FR/jesus-cardenas.jpg"
+                alt="Jesus Cardenas"
+                class="rounded-circle"
+            />
+        
+                    </a>
+        
+        <div class="doc-user__content">
+            <strong>
+                                    <a href="https://www.doctissimo.fr/equipe/les-experts-de-doctissimo/jesus-cardenas" title="Jesus Cardenas">
+                
+                    Jesus Cardenas
+
+                                    </a>
+                            </strong>
+
+                            <span>médecin, ancien directeur médical</span>
+                    </div>
+    </div>
+
+            </div>
+            
+    <div class="doc-my-4">
+        <p>
+            <strong>Certains chats sont plus bavards que d&#039;autres, mais tous s&#039;expriment, que ce soit par des vocalises, des ronronnements ou encore par leurs attitudes et leurs positions. Le chat communique avec son maître, à lui de savoir décrypter le langage de son animal.</strong>
+        </p>
+    </div>
+
+            
+
+
+    
+
+
+<div class="doc-menu-summary">
+    <strong>Sommaire</strong>
+    <ol>
+                    <li>
+                <a href="#comprendre-les-ronronnements-du-chat">Comprendre les ronronnements du chat</a>
+            </li>
+                    <li>
+                <a href="#comprendre-les-miaulements-du-chat">Comprendre les miaulements du chat</a>
+            </li>
+                    <li>
+                <a href="#comprendre-les-attitudes-du-chat-il-remue-la-queue-il-se-met-sur-le-dos-il-baille-il-siffle-ou-crache">Comprendre les attitudes du chat (il remue la queue, il se met sur le dos, il baille, il siffle ou crache…)</a>
+            </li>
+            </ol>
+</div>
+
+
+    <div id="300_atf">
+        <script type="text/javascript">
+        if (!trafficing_exclu_full && device !== 'desktop') {
+            var ads_element_300_atf = document.createElement('div');
+            ads_element_300_atf.setAttribute('data-ad', '300_atf');
+            ads_element_300_atf.setAttribute('data-ad-cls', 'keep');
+            document.getElementById('300_atf').appendChild(ads_element_300_atf);
+        }
+    </script>
+    </div>
+
+
+<p>Si certaines races, comme les siamois, sont r&eacute;put&eacute;es pour &ecirc;tre bavardes, d'autres chats sont plus discrets. Mais tous savent interagir et communiquer avec l'&ecirc;tre humain, &agrave; l'attention duquel ils ont d&eacute;velopp&eacute; les miaulements. Reste que le d&eacute;cryptage du langage f&eacute;lin demandera au ma&icirc;tre un peu de pratique et d'apprentissage.</p>
+<h2 id="comprendre-les-ronronnements-du-chat">Comprendre les ronronnements du chat</h2>
+<h3>Le myst&egrave;re des ronronnements</h3>
+<p>Tant le m&eacute;canisme que la signification des <strong>ronronnements</strong> du chat demeurent myst&eacute;rieux, m&ecirc;me si des amorces d'explications sont aujourd'hui propos&eacute;es par les sp&eacute;cialistes. Ainsi, l'on sait que cette vocalisation se produit aussi bien &agrave; l'inspiration qu'&agrave; l'expiration. La contraction du larynx provoquerait une vibration des cordes vocales du chat. Pour autant, les ronronnements, souvent interpr&eacute;t&eacute;s par les ma&icirc;tres comme des signes de volupt&eacute; et de bien-&ecirc;tre, constituent un langage ambigu, puisqu'ils peuvent signifier aussi bien le plaisir que la souffrance. On sait en effet qu'un chat qui souffre peut ronronner pour se rassurer. Les ronrons f&eacute;lins, loin de ne manifester que le bonheur, peuvent donc aussi &ecirc;tre un signe de maladie ou de douleur.</p>
+<h3>Bienfaisantes vibrations</h3>
+<p>Le ronronnement appara&icirc;t chez le chaton d&egrave;s l'&acirc;ge de deux jours, lors de la t&eacute;t&eacute;e. Une port&eacute;e de chatons qui t&ecirc;te peut ainsi produire un concert impressionnant. Une fois adulte, le chat ronronne sous les c&acirc;lins. Certains produisent aussi ces <strong>vibrations</strong> lorsque la nourriture propos&eacute;e est particuli&egrave;rement appr&eacute;ci&eacute;e. Le paradoxe que constituent les ronronnements de souffrance peut &ecirc;tre r&eacute;solu d&egrave;s lors que l'on consid&egrave;re ce m&eacute;canisme vibratoire comme un r&eacute;flexe permettant au chat la r&eacute;gression vers un moment de bien-&ecirc;tre complet : celui de la t&eacute;t&eacute;e et de proximit&eacute; absolue avec la m&egrave;re. Outre leurs propri&eacute;t&eacute;s anti-stress, dont b&eacute;n&eacute;ficie aussi le ma&icirc;tre qui partage un moment de d&eacute;tente avec son chat, les ronronnements auraient, selon certaines hypoth&egrave;ses, celle d'acc&eacute;l&eacute;rer la gu&eacute;rison.</p>
+<div><span><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FnosanimauxDoctissimo%2Fvideos%2F773844976150892%2F&show_text=0&width=476" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></span></div>
+<h2 id="comprendre-les-miaulements-du-chat">Comprendre les miaulements du chat</h2>
+<div>    <div class="doc-block-pub doc-block-pub-dyn-infeed" id="dyn_infeed_1" data-ad="dyninfeed" data-ad-cls="keep"></div>
+</div>
+<h3>Les miaulements : un langage destin&eacute; &agrave; l'&ecirc;tre humain</h3>
+<p>Entre eux, les chats ne miaulent pas. Ils d&eacute;veloppent un autre type de vocalisations, comme le cri de guerre du m&acirc;le qui rencontre un rival ou l'appel plaintif de la femelle lorsqu'elle est en chaleur et veut attirer les matous. Les <strong>miaulements</strong> constituent une forme de <strong>langage</strong> que le chat n'utilise qu'avec l'&ecirc;tre humain. On observe ainsi que les chats sauvages ou harets ne miaulent pas, ou tr&egrave;s peu. D'autres vocalises sont parfois confondues avec les miaulements, comme le chirping, suite modul&eacute;e de petits cris pouss&eacute;s par le chat qui observe un oiseau qu'il sait inaccessible. Mais le traditionnel "miaou", avec toutes ses variations de tonalit&eacute; et d'intensit&eacute;, s'adresse au ma&icirc;tre.</p>
+<h3>D&eacute;crypter les vocalisations</h3>
+<p><strong>D&eacute;crypter les vocalisations</strong> de son chat s'apprend avec le temps. La proximit&eacute; affective avec l'animal facilite grandement la communication. Le chat est capable d'apprendre les termes du langage humain qui le concernent et qui lui sont r&eacute;p&eacute;t&eacute;s. De m&ecirc;me, le ma&icirc;tre finit par associer des significations, des intentions et des &eacute;tats affectifs aux vocalisations de son f&eacute;lin. Voici quelques indications g&eacute;n&eacute;rales :</p>
+<ul><li><a href="https://www.doctissimo.fr/animaux/chat/education-chat/mon-chat-miaule-sans-arret" rel="" target="">miaulement</a> court (deux tons) : accueil, salutation ;</li><li>miaulement en demi-ton ou plus profond : demande, r&eacute;clamation ;</li><li>miaulement aigu : douleur, plainte ;</li><li>grognement : m&eacute;contentement.</li></ul>
+<p>Les tonalit&eacute;s varient &eacute;videmment selon le sexe, mais aussi la race du chat, c'est ce qui rend la communication verbale de chaque animal unique et permet au ma&icirc;tre de reconna&icirc;tre son appel en le diff&eacute;renciant de celui d'autres chats.</p>
+<h2 id="comprendre-les-attitudes-du-chat-il-remue-la-queue-il-se-met-sur-le-dos-il-baille-il-siffle-ou-crache">Comprendre les attitudes du chat (il remue la queue, il se met sur le dos, il baille, il siffle ou crache&hellip;)</h2>
+<h3>La communication non verbale du chat</h3>
+<p>La plus grande partie de la communication du chat est <strong>non verbale</strong>. Il s'agit de postures ou d'attitudes, que celles-ci concernent l'ensemble du corps, comme lorsque le chat se met sur le dos, ou qu'elles impliquent un organe particulier, comme la queue. Le r&eacute;pertoire de <strong>communication</strong> du chat utilise aussi une combinaison de signifiants, par exemple des crachements, des sifflements ou des grognements combin&eacute;s &agrave; une posture de menace, de d&eacute;fense ou d'attaque, avec poil h&eacute;riss&eacute;. Tout naturellement, le chat consid&egrave;re que le ma&icirc;tre pratique comme lui la communication par postures et par gestes. Il est donc tr&egrave;s sensible aux attitudes de l'&ecirc;tre humain. Il faut donc se surveiller en sa pr&eacute;sence pour ne pas l'inqui&eacute;ter.</p>
+<div>    <div class="doc-block-pub doc-block-pub-dyn-infeed" id="dyn_infeed_2" data-ad="dyninfeed" data-ad-cls="keep"></div>
+</div>
+<div>
+                
+        <div class="doc-recommendations doc-recommendations--article">
+                    <div class="h2">À voir aussi</div>
+            <div class="row">
+                                    <div class="col-md-6">
+                                    
+        
+    <div class="card card--band card--band-50 card--no-strip">
+        <div class="card__img-wrapper">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize1.prod.docfr.doc-media.fr/s/160/img/build/images/refonte/default-image-wide.jpg"
+                    loading="lazy"
+                                alt="Chats"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="160"
+                                                    height="160"
+                            />
+                            <noscript>
+                    <img src="https://resize1.prod.docfr.doc-media.fr/s/160/img/build/images/refonte/default-image-wide.jpg" alt="Chats" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                
+                
+                                    <span class="color-grey-medium">Dossier</span>
+                
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/animaux/chat"
+               title="Chats" >Chats</a>
+                            </span>
+                                </div>
+    </div>
+
+                    </div>
+                                    <div class="col-md-6">
+                                    
+        
+    <div class="card card--band card--band-50 card--no-strip">
+        <div class="card__img-wrapper">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize3.prod.docfr.doc-media.fr/s/160/img/var/doctissimo/storage/images/fr/www/animaux/chat/chat-age/fin-de-vie-du-chat/723931-2-fre-FR/fin-de-vie-du-chat.jpg"
+                    loading="lazy"
+                                alt="Comment savoir si votre chat est en fin de vie ?"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="160"
+                                                    height="160"
+                            />
+                            <noscript>
+                    <img src="https://resize3.prod.docfr.doc-media.fr/s/160/img/var/doctissimo/storage/images/fr/www/animaux/chat/chat-age/fin-de-vie-du-chat/723931-2-fre-FR/fin-de-vie-du-chat.jpg" alt="Comment savoir si votre chat est en fin de vie ?" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                
+                
+                                    <span class="color-grey-medium">Article</span>
+                
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/animaux/chat/chat-age/fin-de-vie-du-chat"
+               title="Comment savoir si votre chat est en fin de vie ?" >Comment savoir si votre chat est en fin de vie ?</a>
+                            </span>
+                                </div>
+    </div>
+
+                    </div>
+                            </div>
+            </div>
+</div>
+<h3>Les yeux, la queue et les oreilles : tout un langage</h3>
+<p>Le chat se sert des positions de la <strong>queue</strong> et des <strong>oreilles</strong> pour communiquer. Une queue lev&eacute;e en point d'interrogation est une marque d'accueil et de joie. A l'inverse, si la queue est basse, le chat a peur. L'organe est h&eacute;riss&eacute; si l'animal est en col&egrave;re ou en cas d'agression. Un chat qui bat de la queue manifeste l'excitation. Le langage de la queue peut &ecirc;tre combin&eacute; aux postures des oreilles : couch&eacute;es en arri&egrave;re en cas de peur ou d'agression, droites ou l&eacute;g&egrave;rement en avant pour signifier l'int&eacute;r&ecirc;t. Les <strong>yeux</strong> dilat&eacute;s sont un signe d'excitation. Un chat qui appr&eacute;cie son ma&icirc;tre et se sent &agrave; l'aise cligne plusieurs fois des yeux.</p>
+<h3>Le langage des c&acirc;lins : pour dire "Je t'aime"</h3>
+<p>Les <strong>c&acirc;lins</strong> que le chat prodigue &agrave; l'&ecirc;tre humain sont porteurs de signification. Il frotte son corps aux jambes pour y d&eacute;poser ses ph&eacute;romones et indiquer que la personne lui appartient. S'il frotte sa queue et sa t&ecirc;te, c'est en guise d'accueil chaleureux. Certains chats se servent de ces deux rituels pour r&eacute;clamer leur nourriture ou de l'attention. En frottant sa t&ecirc;te contre celle du ma&icirc;tre, le chat lui dit : "<em>Je t'aime</em>". De m&ecirc;me, tous les gestes de <a href="https://www.doctissimo.fr/animaux/chat/comportement-chat/le-chat-fait-sa-toilette" rel="" target="">toilettage </a>sont des signes d'affection. Le chat peut vouloir toiletter son ma&icirc;tre en lui l&eacute;chant les doigts ou le visage, il peut encore esquisser un bisou ou mordiller les cheveux.</p>
+<h3>Chat couch&eacute; sur le dos : attention aux erreurs d'interpr&eacute;tation !</h3>
+<p>On pense souvent qu'un chat <strong>couch&eacute; sur le dos</strong> veut jouer ou qu'il s'agit d'une invitation &agrave; lui caresser sur le ventre. La majorit&eacute; des chats d&eacute;teste qu'on leur touche le ventre et le ma&icirc;tre risque tout simplement de se faire mordre ou griffer. Ceux qui sont particuli&egrave;rement en confiance tol&eacute;reront ce contact pendant quelques instants. La posture couch&eacute;e sur le dos peut avoir plusieurs significations : la plus courante est que le chat se sent bien et relax&eacute;, ce qui n'est pas une invitation &agrave; le d&eacute;ranger. A la saison des amours, m&acirc;les et femelles manifestent leur excitation en se roulant sur le dos, parfois en rond. Ils laissent ainsi de pr&eacute;cieuses marques olfactives sur le sol, facilitant la rencontre.</p>
+<div>    <div class="doc-block-pub doc-block-pub-dyn-infeed" id="dyn_infeed_3" data-ad="dyninfeed" data-ad-cls="keep"></div>
+</div>
+<div class="doc-encadre"><p>
+<strong>Comment votre chat vous communique-t-il son mal-&ecirc;tre ?</strong>
+Les chats sont extr&ecirc;mement r&eacute;sistants &agrave; la douleur et la manifestent g&eacute;n&eacute;ralement peu. Il est donc parfois difficile de savoir s'ils souffrent et s'il faut consulter en urgence. Un chat qui feule, grogne de mani&egrave;re modul&eacute;e et essaie de mordre quand vous le touchez peut &ecirc;tre s&eacute;rieusement bless&eacute; (&agrave; la patte ou par un abc&egrave;s, par exemple) ; un chat qui se recroqueville pour ne plus bouger ou qui marche comme sur des &oelig;ufs devra &ecirc;tre conduit chez un praticien.
+<strong>Dr Elisabeth Tan&eacute;, v&eacute;t&eacute;rinaire.</strong></p></div>
+
+
+<script type="text/javascript">
+    window.unify_dataSlayer[0].content.dynInfeedCount = 3;
+</script>
+    
+    <p class="doc-annonceur text-right"></p>
+<div data-ad-ops-label></div>
+</div>
+
+    <source media="(max-width: 380px)" srcset="https://resize2.prod.docfr.doc-media.fr/rcrop/380,288,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/le-langage-du-chat/712285-4-fre-FR/le-langage-du-chat.jpg">
+    <source media="(max-width: 480px)" srcset="https://resize2.prod.docfr.doc-media.fr/rcrop/480,363,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/le-langage-du-chat/712285-4-fre-FR/le-langage-du-chat.jpg">
+    <source media="(max-width: 1023px)" srcset="https://resize2.prod.docfr.doc-media.fr/rcrop/720,420,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/le-langage-du-chat/712285-4-fre-FR/le-langage-du-chat.jpg">
+    <source media="(min-width: 1024px)" srcset="https://resize2.prod.docfr.doc-media.fr/rcrop/650,380,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/le-langage-du-chat/712285-4-fre-FR/le-langage-du-chat.jpg">
+
+<div class="doc-px-2 doc-px-md-0">
+    <hr class="doc-hr-100"/>
+
+           
+<div class="doc-date-xs doc-my-1">
+        
+                
+                        <span>Publié le&nbsp;<time datetime="2015-08-19T11:01:00+02:00">19/08/2015 à 11h01</time></span>
+            </div>
+
+    
+                            <div class="doc-grid-2-auto doc-my-2">
+            <span class="h3 doc-m-0">Révision médicale :</span>
+            <span class="text-right doc-text-xs">24/08/2017</span>
+        </div>
+
+        <div class="doc-my-3">
+                <div class="doc-user">
+                    <a class="doc-user__img-wrapper" href="https://www.doctissimo.fr/equipe/les-experts-de-doctissimo/jesus-cardenas" title="Jesus Cardenas">
+        
+                    <img
+                src="https://resize1.prod.docfr.doc-media.fr/r/50,50,center-middle,ffffff,smartcrop/img/var/doctissimo/storage/images/fr/www/equipe/les-experts-de-doctissimo/jesus-cardenas/4935326-9-fre-FR/jesus-cardenas.jpg"
+                alt="Jesus Cardenas"
+                class="rounded-circle"
+            />
+        
+                    </a>
+        
+        <div class="doc-user__content">
+            <strong>
+                                    <a href="https://www.doctissimo.fr/equipe/les-experts-de-doctissimo/jesus-cardenas" title="Jesus Cardenas">
+                
+                    Jesus Cardenas
+
+                                    </a>
+                            </strong>
+
+                            <span>médecin, ancien directeur médical</span>
+                    </div>
+    </div>
+
+        </div>
+    
+                        
+    
+
+<div class="doc-menu-social doc-my-3 doc-ml-neg-3 doc-mr-neg-3 doc-ml-neg-md-0 doc-mr-neg-md-0">
+    <span class="doc-text-sm">Partager sur :</span>
+    <div class="doc-menu-social__share text-right">
+        <a
+                class="doc-social-btn"
+                href="https://www.facebook.com/dialog/share?app_id=290600267704798&display=popup&href=https://www.doctissimo.fr/animaux/chat/comportement-chat/le-langage-du-chat"
+                target="_blank"
+                data-toggle="tooltip"
+        >
+            <i class="doc-icon-facebook-circle"></i>
+        </a>
+        <a
+                class="doc-social-btn"
+                href="https://twitter.com/intent/tweet?text=D%C3%A9crypter%20le%20langage%20de%20son%20chat&url=https://www.doctissimo.fr/animaux/chat/comportement-chat/le-langage-du-chat"
+                target="_blank"
+                data-toggle="tooltip"
+        >
+            <i class="doc-icon-twitter-circle"></i>
+        </a>
+        <a
+                class="doc-social-btn whatsapp"
+                role="button"
+                target="_blank"
+                data-toggle="tooltip"
+                data-text="https://www.doctissimo.fr/animaux/chat/comportement-chat/le-langage-du-chat"
+        >
+            <i class="doc-icon-whatsapp-circle"><span class="path1"></span><span class="path2"></span></i>
+        </a>
+        <a
+                class="doc-social-btn"
+                href="//www.pinterest.com/pin/create/button/?url=https://www.doctissimo.fr/animaux/chat/comportement-chat/le-langage-du-chat&media=https://resize2.prod.docfr.doc-media.fr/rcrop/720,420,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/le-langage-du-chat/712285-4-fre-FR/le-langage-du-chat.jpg&description=D%C3%A9crypter%20le%20langage%20de%20son%20chat"
+                target="_blank"
+                data-toggle="tooltip"
+        >
+            <i class="doc-icon-pinterest-circle"></i>
+        </a>
+        <a
+                class="doc-social-btn"
+                href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.doctissimo.fr%2Fanimaux%2Fchat%2Fcomportement-chat%2Fle-langage-du-chat"
+                target="_blank"
+                data-toggle="tooltip"
+        >
+            <i class="doc-icon-linkedin-with-circle"></i>
+        </a>
+    </div>
+</div>
+</div>
+
+                                                        </div>
+                                                    <div id="right-col" class="col-md-4">
+                                
+                                                                            
+<div id="300_atf-col">
+    <script type="text/javascript">
+        if (!trafficing_exclu_full && device !== 'mobile' && device !== 'tablette') {
+            var ads_element_300_atf = document.createElement('div');
+            ads_element_300_atf.setAttribute('data-ad', '300_atf');
+            ads_element_300_atf.setAttribute('data-ad-cls', 'keep');
+            document.getElementById('300_atf-col').appendChild(ads_element_300_atf);
+        }
+    </script>
+</div>
+                                                                                                </div>
+                                                            </div>
+                    <div class="doc-my-2">
+        <div id="taboola-below-article-thumbnails" data-ad-sticky-unstick-to="#pegasus_banner_atf"></div>
+
+                
+        <div class="col-md-8">
+                                                        
+    <div class="doc-savoirplus doc-list doc-my-5 doc-my-md-6 ">
+                                
+            <div class="doc-savoirplus__section ">
+                                    <span>Discutez-en avec la communauté</span>
+                    <ul><li><a href="https://forum.doctissimo.fr/animaux/Chats/liste_sujet-1.htm" rel="" target="">Forum Chats</a></li></ul>
+                            </div>
+            </div>
+                    </div>
+
+        
+        <div class="col-md-12">
+            <div class="doc-my-5 doc-my-md-6">
+                
+                
+        <div class="doc-recommendations doc-recommendations--bottom">
+                    <div class="doc-slider doc-slider--js doc-slider--js-3">
+                <div class="doc-slider__head">
+                    <div class="title title--sm">À voir aussi</div>
+                    <div class="controls">
+                        <span class="controls__prev"><i class="doc-icon-arrow-left"></i></span>
+                        <span class="controls__next"><i class="doc-icon-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="doc-slider__container">
+                                            <div class="doc-slider__container__item">
+                                        
+        
+    <div class="card ">
+        <div class="card__img-wrapper">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize1.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chien/comportement-chien/langage-du-chien/720669-3-fre-FR/langage-du-chien.jpg"
+                    loading="lazy"
+                                alt="Décodez le langage de votre chien "
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="450"
+                                                    height="340"
+                            />
+                            <noscript>
+                    <img src="https://resize1.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chien/comportement-chien/langage-du-chien/720669-3-fre-FR/langage-du-chien.jpg" alt="Décodez le langage de votre chien " class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Animaux</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Article</span>
+                
+                                    <span class="strip bg-color-category-famille strip-article-animaux"></span>
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/animaux/chien/comportement-chien/langage-du-chien"
+               title="Décodez le langage de votre chien" >Décodez le langage de votre chien </a>
+                            </span>
+                                </div>
+    </div>
+
+                        </div>
+                                            <div class="doc-slider__container__item">
+                                        
+        
+    <div class="card ">
+        <div class="card__img-wrapper">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/698607-3-fre-FR/comportement-chat.jpg"
+                    loading="lazy"
+                                alt="Comportement du chat"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="450"
+                                                    height="340"
+                            />
+                            <noscript>
+                    <img src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/698607-3-fre-FR/comportement-chat.jpg" alt="Comportement du chat" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Animaux</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Dossier</span>
+                
+                                    <span class="strip bg-color-category-famille strip-dossier-animaux"></span>
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/animaux/chat/comportement-chat"
+               title="Comportement du chat" >Comportement du chat</a>
+                            </span>
+                                </div>
+    </div>
+
+                        </div>
+                                            <div class="doc-slider__container__item">
+                                        
+        
+    <div class="card ">
+        <div class="card__img-wrapper">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize2.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/soins-chat/698943-3-fre-FR/soins-chat.jpg"
+                    loading="lazy"
+                                alt="Prendre soin de son chat"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="450"
+                                                    height="340"
+                            />
+                            <noscript>
+                    <img src="https://resize2.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/soins-chat/698943-3-fre-FR/soins-chat.jpg" alt="Prendre soin de son chat" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Animaux</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Dossier</span>
+                
+                                    <span class="strip bg-color-category-famille strip-dossier-animaux"></span>
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/animaux/chat/soins-chat"
+               title="Prendre soin de son chat" >Prendre soin de son chat</a>
+                            </span>
+                                </div>
+    </div>
+
+                        </div>
+                                            <div class="doc-slider__container__item">
+                                        
+        
+    <div class="card ">
+        <div class="card__img-wrapper">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize2.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/reproduction-chat/sterilisation-du-chat/729807-3-fre-FR/sterilisation-du-chat.jpg"
+                    loading="lazy"
+                                alt="Faire stériliser mon chat : pourquoi et comment ?"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="450"
+                                                    height="340"
+                            />
+                            <noscript>
+                    <img src="https://resize2.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/reproduction-chat/sterilisation-du-chat/729807-3-fre-FR/sterilisation-du-chat.jpg" alt="Faire stériliser mon chat : pourquoi et comment ?" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Animaux</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Article</span>
+                
+                                    <span class="strip bg-color-category-famille strip-article-animaux"></span>
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/animaux/chat/reproduction-chat/sterilisation-du-chat"
+               title="Faire stériliser mon chat : pourquoi et comment ?" >Faire stériliser mon chat : pourquoi et comment ?</a>
+                            </span>
+                                </div>
+    </div>
+
+                        </div>
+                                            <div class="doc-slider__container__item">
+                                        
+        
+    <div class="card ">
+        <div class="card__img-wrapper">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/soins-chat/vermifuger-son-chat/707425-4-fre-FR/vermifuger-son-chat.jpg"
+                    loading="lazy"
+                                alt="Comment vermifuger son chat ?"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="450"
+                                                    height="340"
+                            />
+                            <noscript>
+                    <img src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/soins-chat/vermifuger-son-chat/707425-4-fre-FR/vermifuger-son-chat.jpg" alt="Comment vermifuger son chat ?" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Animaux</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Article</span>
+                
+                                    <span class="strip bg-color-category-famille strip-article-animaux"></span>
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/animaux/chat/soins-chat/vermifuger-son-chat"
+               title="Comment vermifuger son chat ?" >Comment vermifuger son chat ?</a>
+                            </span>
+                                </div>
+    </div>
+
+                        </div>
+                                            <div class="doc-slider__container__item">
+                                        
+        
+    <div class="card ">
+        <div class="card__img-wrapper">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize3.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/sommeil-du-chat/711583-4-fre-FR/sommeil-du-chat.jpg"
+                    loading="lazy"
+                                alt="Le sommeil du chat"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="450"
+                                                    height="340"
+                            />
+                            <noscript>
+                    <img src="https://resize3.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/comportement-chat/sommeil-du-chat/711583-4-fre-FR/sommeil-du-chat.jpg" alt="Le sommeil du chat" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Animaux</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Article</span>
+                
+                                    <span class="strip bg-color-category-famille strip-article-animaux"></span>
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/animaux/chat/comportement-chat/sommeil-du-chat"
+               title="Le sommeil du chat" >Le sommeil du chat</a>
+                            </span>
+                                </div>
+    </div>
+
+                        </div>
+                                            <div class="doc-slider__container__item">
+                                        
+        
+    <div class="card ">
+        <div class="card__img-wrapper">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize3.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/maladies-chat/conjonctivite-du-chat/707317-3-fre-FR/conjonctivite-du-chat.jpg"
+                    loading="lazy"
+                                alt="Conjonctivite du chat"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="450"
+                                                    height="340"
+                            />
+                            <noscript>
+                    <img src="https://resize3.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/maladies-chat/conjonctivite-du-chat/707317-3-fre-FR/conjonctivite-du-chat.jpg" alt="Conjonctivite du chat" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Animaux</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Article</span>
+                
+                                    <span class="strip bg-color-category-famille strip-article-animaux"></span>
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/animaux/chat/maladies-chat/conjonctivite-du-chat"
+               title="Conjonctivite du chat" >Conjonctivite du chat</a>
+                            </span>
+                                </div>
+    </div>
+
+                        </div>
+                                            <div class="doc-slider__container__item">
+                                        
+        
+    <div class="card ">
+        <div class="card__img-wrapper">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/maladies-chat/699087-4-fre-FR/maladies-chat.jpg"
+                    loading="lazy"
+                                alt="Maladies du chat"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="450"
+                                                    height="340"
+                            />
+                            <noscript>
+                    <img src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/img/var/doctissimo/storage/images/fr/www/animaux/chat/maladies-chat/699087-4-fre-FR/maladies-chat.jpg" alt="Maladies du chat" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Animaux</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Dossier</span>
+                
+                                    <span class="strip bg-color-category-famille strip-dossier-animaux"></span>
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/animaux/chat/maladies-chat"
+               title="Maladies du chat" >Maladies du chat</a>
+                            </span>
+                                </div>
+    </div>
+
+                        </div>
+                                    </div>
+            </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+            
+        </div>
+
+        
+<div id="doc-newsletter-optin-senior" class="doc-modal-layout d-none">
+
+    <div class="doc-modal shadow-lg rounded-lg text-center doc-p-3">
+        <p class="right" data-action="close" data-close-target="doc-newsletter-optin-senior"><i class="doc-icon-close"></i></p>
+        <!-- Before sending data -->
+        <div id="doc-newsletter-optin-senior--form">
+
+            <div class="d-block text-center"><img src="https://cdn.prod.docfr.doc-media.fr/build/images/illustration/newsletter-senior.svg" alt=""></div>
+
+            <span class="h3">Newsletter Bien Vieillir</span>
+
+            <p class="doc-text-sm">Recevez nos dernières actualités pour rester en forme</p>
+
+            <form action="/newsletter-optin/262" method="post">
+                <input class="d-block border-grey-regular doc-py-0 doc-px-2 doc-my-1 doc-input-text text-center"
+                       name="newsletter-email" type="email" placeholder="Votre email" required>
+
+                <button class="d-block doc-btn doc-btn--rounded doc-btn--primary doc-my-1"
+                        type="submit">S’inscrire
+                </button>
+            </form>
+
+            <p class="doc-text-xxs color-grey-regular text-justify">
+                <a href="/" target="_blank">Doctissimo</a>, met en oeuvre des traitements de données personnelles, y compris des informations renseignées dans le formulaire ci-dessus,
+                pour vous adresser les newsletters auxquelles vous vous êtes abonnés et, sous réserve de vos choix en matière de cookies, rapprocher ces données avec d’autres données
+                vous concernant à des fins de segmentation client sur la base de laquelle sont personnalisées nos contenus et publicités. Davantage d’informations vous seront fournies
+                à ce sujet dans l’email qui vous sera adressé pour confirmer votre inscription.
+            </p>
+        </div>
+
+        <!-- After sending data -->
+        <div id="doc-newsletter-optin-senior--submitted" class="d-none text-center doc-py-3">
+            <div class="d-block"><img src="https://cdn1.prod.docfr.doc-media.fr/build/images/refonte/newsletters/newsletter-img.png" alt="" width="50%"></div>
+            <div>
+                <span class="h3" id="doc-newsletter-optin-senior--submitted-message">Merci de votre confiance</span>
+                <p>Découvrez toutes nos autres newsletters.</p>
+                <a href="/newsletters" class="d-block doc-btn doc-btn--rounded doc-btn--primary doc-py-1">Découvrir</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+        <div class="doc-mb-4 doc-mb-md-1">
+                <footer>
+    <div class="container">
+
+                <div class="text-center">
+            <div class="doc-mb-2"><img class="logo" width="200" height="32" title="Doctissimo : Santé et bien être avec Doctissimo" alt="Doctissimo : Santé et bien être avec Doctissimo" src="https://cdn3.prod.docfr.doc-media.fr/build/images/refonte/logos/doctissimo.svg"></div>
+            <div class="doc-py-1"><span>Suivez-nous sur :</span></div>
+            <div class="social doc-py-1">
+                <a href="https://fr-fr.facebook.com/doctissimo/" target="_blank" rel="noopener noreferrer" title="Facebook Doctissimo"><i class="doc-icon-facebook-circle"></i></a>
+                <a href=" https://www.pinterest.fr/doctissimo/" target="_blank" rel="noopener noreferrer" title="Pinterest Doctissimo"><i class="doc-icon-pinterest-circle"></i></a>
+                <a href="https://www.instagram.com/doctissimo/?hl=fr" target="_blank" rel="noopener noreferrer" title="Instagram Doctissimo"><i class="doc-icon-instagram-circle"></i></a>
+                <a href="https://www.youtube.com/user/Doctissimo" target="_blank" rel="noopener noreferrer" title="Youtube Doctissimo"><i class="doc-icon-youtube-circle"></i></a>
+                <a href="https://twitter.com/doctissimo" target="_blank" rel="noopener noreferrer" title="Twitter Doctissimo"><i class="doc-icon-twitter-circle"></i></a>
+                <a href="https://www.tiktok.com/@doctissimo" target="_blank" rel="noopener noreferrer" title="Tiktok Doctissimo"><i class="doc-icon-tik-tok"></i></a>
+                <a href="https://fr.linkedin.com/company/doctissimo.fr" target="_blank" rel="noopener noreferrer" title="LinkedIn Doctissimo"><i class="doc-icon-linkedin-with-circle"></i></a>
+            </div>
+        </div>
+
+        
+                    <div class="bg-color-blue-0 doc-p-3 doc-mt-1 d-flex align-items-center flex-wrap">
+        <span>Mentions légales&nbsp;:</span>
+        <div class="doc-p-1">
+                        <a href="javascript:Didomi.preferences.show()" title="Paramétrer les cookies">Paramétrer les cookies</a>
+                        <a href="https://www.doctissimo.fr/notice_legale.htm" title="Mentions légales">Mentions légales</a>
+            <a href="https://www.doctissimo.fr/equipe/charte/faq-abonnement" title="Vos choix concernant l’utilisation de cookies">Vos choix concernant l’utilisation de cookies</a>
+            <a href="https://www.doctissimo.fr/equipe/charte/charte-donnees-personnelles-cookies" title="Politique de protection des données personnelles">Politique de protection des données personnelles</a>
+            <a href="https://www.doctissimo.fr/equipe/chartes/conditions-generales-dabonnement/87f1be_ar.html" title="Conditions générales d’abonnement">Conditions générales d’abonnement</a>
+        </div>
+    </div>
+
+    </div>
+</footer>
+        </div>
+
+            <script defer src="https://cdn.prod.docfr.doc-media.fr/build/article.6220a980.js" ></script>
+
+        <script defer src="https://cdn2.prod.docfr.doc-media.fr/build/doctissimo_footer_tags.f7437635.js"></script>
+
+
+                                <div data-ad="oop" data-ad-cls="keep"></div>
+            
+<script>
+    /*loadCss*/
+    !function(w){"use strict";var loadCSS=function(href,before,media){function ready(cb){return doc.body?cb():void setTimeout(function(){ready(cb)})}function loadCB(){ss.addEventListener&&ss.removeEventListener("load",loadCB),ss.media=media||"all"}var ref,doc=w.document,ss=doc.createElement("link");if(before)ref=before;else{var refs=(doc.body||doc.getElementsByTagName("head")[0]).childNodes;ref=refs[refs.length-1]}var sheets=doc.styleSheets;ss.rel="stylesheet",ss.href=href,ss.media="only x",ready(function(){ref.parentNode.insertBefore(ss,before?ref:ref.nextSibling)});var onloadcssdefined=function(cb){for(var resolvedHref=ss.href,i=sheets.length;i--;)if(sheets[i].href===resolvedHref)return cb();setTimeout(function(){onloadcssdefined(cb)})};return ss.addEventListener&&ss.addEventListener("load",loadCB),ss.onloadcssdefined=onloadcssdefined,onloadcssdefined(loadCB),ss};"undefined"!=typeof exports?exports.loadCSS=loadCSS:w.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+
+    /*link[rel=preload] polyfill*/
+    !function(w){if(w.loadCSS){var rp=loadCSS.relpreload={};if(rp.support=function(){try{return w.document.createElement("link").relList.supports("preload")}catch(e){return!1}},rp.poly=function(){for(var links=w.document.getElementsByTagName("link"),i=0;i<links.length;i++){var link=links[i];"preload"===link.rel&&"style"===link.getAttribute("as")&&(w.loadCSS(link.href,link),link.rel=null)}},!rp.support()){rp.poly();var run=w.setInterval(rp.poly,300);w.addEventListener&&w.addEventListener("load",function(){w.clearInterval(run)}),w.attachEvent&&w.attachEvent("onload",function(){w.clearInterval(run)})}}}(this);
+</script>
+</body>
+</html>
